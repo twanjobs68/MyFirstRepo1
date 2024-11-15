@@ -1,0 +1,45 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+section{
+        margin:20px; 
+   
+}
+ul{
+    padding-left:50px;
+}
+
+.outer-box{
+width:100px;
+height:100px;
+background-color: red;
+border-radius:8px;
+}
+.innerbox{
+margin: 8px;
+border: 18px solid black;
+padding: 8px;
+
+width: 50px;
+height: 50px;
+
+
+color: white;
+background-color: blue;
+}
+/* p{ background-color: blue;
+color:white; 
+
+
+
+
+/* p,div,section,article{
+    color: orange;
+    margin:20px; 
+    
+} */
+/* IDs for one specific 
+thing only, Class can be the same on multiple things. 👌 */

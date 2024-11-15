@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <script src="./scripts/index.js"></script>
+</head>
+<body>
+ 
+<h1 id="title">Hello Chrome </h1>
+<h2>This is great!</h2>
+<h3>This is great!</h3>
+<h4>This is great!</h4>
+<h5>This is greate</h5>
+<h6>This is great!</h6>
+
+<ul>
+    <li>money</li>
+    <li>cash</li>
+    <li>change</li>
+</ul>
+
+<!-- create elements ex h1+h2-->
+ <h1>PURPLE Calililly</h1>
+ <img src="./assets/images/purplecalilily.jpg" height="100px" width="100px">
+ <h2>PURPLE MONKEY</h2>
+ <img src="./assets/images/purplemonkey.jpg" height="50px" width="50px">
+
+ <!--use the '>' simple to insert elements inside of elements. Remember to
+multiply the times you want the element to display
+example ol>li*6  will create six ordered list spots-->
+<ol>
+    <li>monkey</li>
+    <li>ostrich</li>
+    <li>camel</li>
+    <li>bears</li>
+    <li>foxes</li>
+    <li>lychen</li>
+</ol>
+<!--create an ordered list the same level as an unordered list 
+ol>li*3^ul>li*5-->
+<ol>
+    <li>cats</li>
+    <li>bats</li>
+    <li>rats</li>
+</ol>
+<ul>
+    <li>Sugar cane</li>
+    <li>corn stalks</li>
+    <li>celery Stalk</li>
+    <li>Leeks Stalks</li>
+    <li>Fennel stalks</li>
+</ul>
+<!--or you can do the same above by div>(ol>li*3)+(ul>li*5) be sure to put 
+parenthesis around functions before and after the plus-->
+<!--This doesnt work-->
+
+div>+ol>li*2+(ul>li*3)
+
+<!--Resume template created by typing  h1+hr+h2+hr+h2+ul>li*4^hr-->
+<section>
+<br><br><br><br><br><br><br><br><br><br><br>
+<div id ="johnsResume";margin=10px; padding="10px">
+<h1>John Jay</h1>
+<br>
+<p>Instructor at George Mason University</p><br>
+
+<hr>
+<br>
+<h2>Education</h2>
+<br>
+<p>MBA at Wharton School of Business</p><br>
+<hr><br>
+<h2>Interests</h2><br>
+<ul>
+    <li>Military Intelligencce</li>
+    <li>NASA</li>
+    <li>Cricket</li>
+    <li>Baseball</li>
+</ul>
+<br>
+<hr>
+<br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br>
+</section>
+</div>
+
+
+<!-- _blank - opens the document in a new window or tab.
+     _parent - opens the document in the parent frame.
+     _top - opens the document in the full body of the window.-->
+
+     <!-- <a href=“https://perscholas.org/” 
+     target=“_blank”>Head to the Per Scholas Website!</a>
+     <hr>
+     <img src="./assets/images/googleimg.png">
+     <a href=“https://google.com/” target=“_blank”>GO TO GOOGLE!</a> -->
+<ol>
+    <li>animal,birds,chickens,tigers</li>
+    <li>animal,birds,chickens,tigers</li>
+    <li>animal,birds,chickens,tigers</li>
+</ol>
+<img src="./assets/images/purplemonkey.jpg" alt="Image Not Available." height="50px" width="50px"/>
+<h1>Start WEB Design Course with Per Scholas and </h1>
+<p>I plan to learn all I can!</p>
+<h2>TAKE LOTS OF NOTES</h2>
+
+<p>****put this code inside of myfirsthtml folder**</p>
+
+<p>cd myFirst
+tag-what the elememt is*** what is it supposed to mean ex. paragraph tag<br> 
+Lorem ipsum dolor, sit amet consectetur adipisicing elit. At adipisci<br> 
+cumque quis optio et nihil. Similique autem fugit dolorem repellat, <br>
+
+consequuntur eveniet, harum rerum, quidem repellendus maiores quod! <br> 
+Adipisci, veniam.
+
+Attribute structure is the name,'=', and a piece of text surrounding by double quotes
+example </p>
+
+<p id="monkey-id" class="ant" style=border:red;></p>
+
+ <p> classes are used to add same styling to multiple id's</p>
+<p style="color:green";>**********************************this is a block element. it has open<br>  
+and close tags void elements are like the doctype html  no closing tag
+head element contains all of the data about the page
+parent to child relationship between elements
+elements that act as a container are considered parents
+html is a parent to the </p>
+    The body is a parent to the h2 element and a parent<br>
+     to the ol so the li are the grandchildren of the body
+     The hr element poduces a thematic break in text(a horizonta rule)<br>
+     elements that act as a container are considered parents
+    <hr>
+     parent to child relationship between elements
+elements that act as a container are considered parents</p>
+
+<pre>tag-what the elememt is*** what is it supposed to mean ex. paragraph tag<br> 
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. At adipisci<br> 
+    <b>cumque quis optio et nihil</b>. Similique autem fugit dolorem repellat, <br> 
+    consequuntur eveniet, harum rerum, quidem repellendus maiores quod! <br> 
+    Adipisci, veniam.</pre>
+    <p>The following are some tags : 
+        Bold
+        Italic
+        Important
+        Emphasized
+        Highlighted
+        Small
+        Deleted
+        Insert
+        Superscript
+        Subscript
+        <br>
+        <b>This text is Bold.</b><br>
+        <i>This text is italic.</i><br>
+        <strong>This text is important!</strong><br>
+        <em>This text is emphasized.</em><br>
+        This text is <mark>highlighted</mark>.<br>
+        <small>This text is small.</small><br>
+        <del>This text is deleted.</del><br>
+        <ins>This text is inserted.</ins><br>
+        This text is <sup>superscripted</sup>.<br>
+        This text is <sub>subscripted</sub>.<br>
+
+        <!-- to display alert type4- alert within parenthesis and double quotes
+        Hello Antwan-->
+         <!--console.logHello Daryn-->
+
+    </p>
+    <p class="Twan">This is my special Sentence.</p>
+    <div id="content">Content</div>
+    <div class="item">Item</div>
+    <div id="side-bar"></div>
+    <div id="footer"></div>
+    <div id="header"></div>
+ <br>
+ 
+ <!--Internal Styling-->
+ <!-- play with padding numbers.  All style moved to CSS file-->       
+    <!-- <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+    
+.outer-box{
+    width:160px;
+    height:160px;
+    background-color: red;
+}
+.innerbox{
+    margin: 8px;
+    border: 18px solid black;
+    padding: 8px;
+
+    width: 80px;
+    height: 80px;
+    
+
+    color: white;
+    background-color: blue;
+}
+/* p{ background-color: blue;
+    color:white; 
+
+}*/
+div{
+    color: purple;
+}
+</style> -->
+<div-Box class="outer-box">
+    <div-Box2 class="inner-box">
+
+        Hello Kitty
+    </div-Box2>
+ </div>-Box
+ 
+<div style ="width:100px; height:100pcx;color:magenta;">Observatory Drive</div>
+<div>Calhoun Drive</div>
+<div>Route 66</div>
+<div>Smallville</div>
+
+
+
+</body>
+
+</html>
