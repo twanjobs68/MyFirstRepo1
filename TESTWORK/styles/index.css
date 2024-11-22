@@ -28,24 +28,23 @@ ul{
     background-color: salmon;
 }  */
 
-/* .outer-box{
-    border-width:5px;
-    border-style:dashed;
-    border-color: orange;
-    width:150px;
-    height:150px;
-    background-color: red;
+ #yellow-box{
+    top: 10px;
+    background-color:orange;
+    width: 5em;
+    height:5em;
+    
     border-radius:8px, 8px,8px,8px;
 }
-.innerbox{
-    margin: 8px;
-    border: 18px solid black;
-    padding: 8px;
-    width: 50px;
-    height: 50px;
+/* #blue-box{
+    
+    border: 8px solid black;
+    
+    width: 16em;
+    height: 16em;
     color: white;
     background-color: blue;
-}
+} */
 /* p{ background-color: blue;
 color:white; 
 
@@ -59,3 +58,8 @@ color:white;
 } */
 /* IDs for one specific 
 thing only, Class can be the same on multiple things. 👌 */
+/* td, th { 
+    border:1px solid red;
+    
+} */
+
