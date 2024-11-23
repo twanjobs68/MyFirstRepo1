@@ -6,14 +6,21 @@
     <title>Table creation</title>
     <link rel="stylesheet" href="/styles/style.css" />
     <script src="./scripts/index.js"></script>
+
+    <style>/* Internal Styling using the Style elent in the head section*/
+      body{background-color:turquoise;}
+      red-box{display:flex; justify-content: flex-end;}
+    </style>
   </head>
+ 
   <body>
     <p id="top"></p>
-    <a href="/Pages/contents.html" target="_blank">Content </a><br />
-    <br />
+    <a href="/Pages/contents.html" target="_blank">Content </a><br>
+    <br>
     <a href="#bottom">Bottom</a>
-    <br />
+    <br>
     <!-- first table example -->
+    <!-- <div class="firstTbl">
     <table>
       <tr>
         <th>Table Header</th>
@@ -29,9 +36,9 @@
         <td>Table cell</td>
       </tr>
     </table>
-    <br />
-    <!--second table example with caption element that specifies the Caption of the table-->
-    <table>
+    <br>
+    second table example with caption element that specifies the Caption of the table-->
+    <!-- <table>
       <caption>
         Practice Table 1
       </caption>
@@ -62,10 +69,11 @@
         </tr>
       </tfoot>
     </table>
-    <br />
+  </div> -->
+    <br>
     <!--Calculator Codes-->
-    <br />
-    <br />
+    <br>
+    <br>
     <div id="calcTbl">
       <table>
         <!-- <caption>
@@ -81,9 +89,17 @@
           </tr> -->
         <!-- </thead> -->
         <tbody>
+          <div id="red-box">
+            0.00
+          </div>
+          <!--Inline styling on the element-->
+          <!-- <input type="number" value="0.00" placeholder="" style="border-width:5px;"> -->
+          <!-- <div class="topNbrBtn">
           <tr>
             <td>0.00</td>
-          </tr>
+          </tr> -->
+        </div>
+          <div class="allNumberBtn">
           <tr>
             <td>7</td>
             <td>8</td>
@@ -108,11 +124,11 @@
             <td>.</td>
             <td>+</td>
           </tr>
-          <tr>
-            <td>=</td>
-            <td>-</td>
-          </tr>
+        </div>
+        
+         
         </tbody>
+        
         <!-- <tfoot>
           <tr>
             <td>footer1</td>
@@ -121,8 +137,25 @@
           </tr>
         </tfoot> -->
       </table>
+      <div id="equal-box">
+        =
+      <!-- <tr>
+        <td>
+          
+        </td>
+         <td>=</td>
+        <td>-</td>
+      </tr> -->
     </div>
-    <br />
+    <div id="minus-box">
+      -
+    </div>
+    </div>
+    <br>
+    <br>
+   
+    
+    
     <a href="#top">Top</a>
 
     <p id="bottom"></p>

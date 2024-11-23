@@ -1,24 +1,79 @@
-table{
-    
+/* .firstTbl{
+    border-collapse:collapse;
     width:100%;
     text-align:center;
-}
+} */
 
 #calcTbl{
-    width: 30%;
-    height: 100%;
-    text-align: center;
-    border: 5px solid green;
-   
+   width: 250px;
+   height: 450px;
+   text-align: center;
+   border: 5px solid green;
  }
  
- td, th {
-    border: 2px solid red;
-    height:50px;
+ 
+ th, td {
+   border: 2px solid red;
+   width:25vw;
+   height: 6.65vw;
+     
  }
+ 
  
  td:hover {
     background-color: lightcoral;
     color: white;
     
  }
+
+ #red-box{
+   top: 10px;
+   background-color: white;
+   border:2px solid red;
+   margin:3px;
+   padding: 5px;
+   height:2vw;
+   width:24.1vw;
+ }
+
+ #red-box:hover{
+   background-color:lightcoral;
+   color:white;
+ }
+
+
+ #equal-box{
+   top: 10px;
+   background-color: turquoise;
+   border:2px solid red;
+   margin:3px;
+   padding: 5px;
+   height:2vw;
+   width:17.6vw;
+ }
+ equal-box:hover{
+   background-color:lightcoral;
+   color:white;
+ }
+
+ #minus-box{
+   display:flex;
+   display:inline-block;
+   top: 10px;
+   background-color: turquoise;
+   border:2px solid red;
+   margin:3px;
+   padding: 5px;
+   height:2vw;
+   width:17.6vw;
+ }
+ minus-box:hover{
+   background-color:lightcoral;
+   color:white;
+ }
+
+
+
+
+
+
