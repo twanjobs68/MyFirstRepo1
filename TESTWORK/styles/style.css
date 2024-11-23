@@ -6,7 +6,7 @@
 
 #calcTbl{
    width: 250px;
-   height: 450px;
+   height: 370px;
    text-align: center;
    border: 5px solid green;
  }
@@ -15,7 +15,7 @@
  th, td {
    border: 2px solid red;
    width:25vw;
-   height: 6.65vw;
+   height: 11.65vw;
      
  }
  
@@ -33,7 +33,7 @@
    margin:3px;
    padding: 5px;
    height:2vw;
-   width:24.1vw;
+   width:39.1vw;
  }
 
  #red-box:hover{
@@ -41,7 +41,10 @@
    color:white;
  }
 
+ #eqAndminus-parent{
 
+  display:flex;
+ }
  #equal-box{
    top: 10px;
    background-color: turquoise;
@@ -49,7 +52,7 @@
    margin:3px;
    padding: 5px;
    height:2vw;
-   width:17.6vw;
+   width:28.6vw;
  }
  equal-box:hover{
    background-color:lightcoral;
@@ -57,15 +60,14 @@
  }
 
  #minus-box{
-   display:flex;
-   display:inline-block;
+   
    top: 10px;
    background-color: turquoise;
    border:2px solid red;
    margin:3px;
    padding: 5px;
    height:2vw;
-   width:17.6vw;
+   width:9vw;
  }
  minus-box:hover{
    background-color:lightcoral;
