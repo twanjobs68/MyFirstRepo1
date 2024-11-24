@@ -26,7 +26,7 @@
     
  }
 
- #red-box{
+ #result-box{
    top: 10px;
    background-color: white;
    border:2px solid red;
@@ -36,7 +36,7 @@
    width:39.1vw;
  }
 
- #red-box:hover{
+ #result-box:hover{
    background-color:lightcoral;
    color:white;
  }
@@ -54,7 +54,7 @@
    height:2vw;
    width:28.6vw;
  }
- equal-box:hover{
+ #equal-box:hover{
    background-color:lightcoral;
    color:white;
  }
@@ -69,7 +69,7 @@
    height:2vw;
    width:9vw;
  }
- minus-box:hover{
+ #minus-box:hover{
    background-color:lightcoral;
    color:white;
  }
