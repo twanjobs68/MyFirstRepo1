@@ -10,28 +10,31 @@
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #dd8f8f; 
+  background-color: #e29a9a; 
 }
 
 #resumeNavBar li {
   float: left;
-  border-right: 3px solid #121118;
+  border: 3px solid #121118;
+  border-radius:8px;
+  font-size: 15px;
+  padding:4px;
 }
 
 #resumeNavBar li:last-child {
-  border-right: none;
+  /* border-right: none; */
 }
 
 #resumeNavBar li a {
   display: block;
-  color: rgb(221, 204, 152);
+  color: rgb(43, 34, 9);
   text-align: center;
-  padding: 14px 16px;
+  padding: 7px 1px;
   text-decoration: none;
 }
 
 #resumeNavBar li a:hover:not(.active) {
-  background-color: #111;
+  background-color: #d14949;
 }
 
 #resumeNavBar .active {
@@ -39,13 +42,16 @@
 }
 
 #contactInfo{
-    background-color: darkmagenta;
+    background-color: rgb(235, 112, 235);
 }
 #professionalSummary{
     background-color: deepskyblue;
 }
+#skillsSection{
+    background-color: rgb(183, 248, 119);
+}
 #experienceSection{
-    background-color: #dd8f8f;
+    background-color: #c5b8b8;
 }
 #educationSection{
     background-color: khaki;
@@ -54,7 +60,7 @@
  background-color: cornsilk;   
 }
 #professionalDevelopmentSection{
-    background-color: darkorange;
+    background-color: rgb(248, 161, 56);
 }
 #bottom-navbar{
     background-color: rgb(185, 142, 224);
