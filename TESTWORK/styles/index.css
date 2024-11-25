@@ -43,9 +43,17 @@ ul{
 
 #registerPage{
     border:  3px solid rgb(155, 14, 14);
-    height:250px;
-    width:400px;
+    height:280px;
+    width:435px;
 
+}
+#register-heading{
+    font-weight:bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+#fName{
+    font-weight:bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 /* #blue-box{
     

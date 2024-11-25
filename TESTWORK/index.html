@@ -382,42 +382,87 @@ div{
 </div>
 <br>
 <!--Register Page-->
+<div id="registerPage">
 <form>
-<label for="fullName">Full Name</label>
- <input id="fullName" type="text" name="name">
- <label for="fullName">Full Name</label>
- <input id="fullName" type="text" name="name">
- <label for="Email">Email</label>
-<input type="text" name="userName" id="Email" required placeholder="Enter your Email"><br>
-<label for="password">Password</label>
-<input type="password" name="password" id="password" required placeholder="Enter Your Password"><br>
-<label for="password">Password</label>
-<input type="password" name="password" id="password" required placeholder="Enter Your Password"><br>
-<legend>Radio Buttons</legend>
-        <label for="radio1">radio1</label>
-        <input type="radio" name="radio" id="radio1">
-        <label for="radio2">radio2</label>
-        <input type="radio" name="radio" id="radio2">
 
 
-        <input type=“date”>        
+<h1 id="register-heading">Register Page</h1>
+   <label id="fName" for="fullName">First Name</label>
+        <input id="firstName" type="text" name="name" placeholder="Enter Your First Name"><br>
+    <label id="lName" for="lastName">Last Name</label>
+        <input id="lastName" type="text" name="name" placeholder="Enter Your Last Name"><br>
+    <label id="e-Mail" for="email">Email</label>
+        <input type="text" name="userName" id="Email" required placeholder="Enter your Email"><br>
+    <label id="password1" for="password">Password</label>
+        <input type="password" name="password" id="password" required placeholder="Enter Your Password"><br>
+    <label id="password2" for="password">Confirm Password</label>
+        <input type="password" name="password" id="password" required placeholder="Confirm Your Password"><br>
+    <label id="gender-head">Gender</label>
+        <label id="genderFBtn" for="radio1">Female</label>
+            <input type="radio" name="radio" id="radio1">
+        <label id="genderMBtn" for="radio2">Male</label>
+            <input type="radio" name="radio" id="radio2"><br>
 
-        <fieldset>
-            <legend>Checkboxes</legend>
-            <label for="checkbox">Checkbox1
-               <input type="checkbox" name="checkbox" id="checkbox" />
-            </label>
-            <label for="checkbox2">Checkbox2
-               <input type="checkbox" name="checkbox2" id="checkbox2" />
-            </label>
-            <label for="checkbox3">Checkbox3
-               <input type="checkbox" name="checkbox3" id="checkbox3" />
-            </label>
-         </fieldset>   
+        <label id="dateObirth" for="dateOfBirth">Date of Birth</label>    
+        <input id="current-date" type=“date” name="date" placeholder="mm/dd/yyyy"><br>   
+    
+        <label id="habits-head">Habits</label>
+            <input type="checkbox" name="checkbox" id="checkbox" />
+        <label for="checkbox">You like sports</label>
+            <input type="checkbox" name="checkbox2" id="checkbox2" />
+        <label for="checkbox2">You like to eat</label>
+            <input type="checkbox" name="checkbox3" id="checkbox3" />
+        <label for="checkbox3">You like to sleep</label><br>
         <input type="submit" value="Register">
 </form>
-
+</div>
  <br>
+ <br><!--DISPLAY PROPERTIES
+ ************************************************
+ CSS Properties: Display
+
+The display property defines how an element will be displayed on the DOM. The display property consists of two basic ways of displaying an element:
+Outer Display Type: Tells the element if it needs to be displayed with elements to either side of it or if it should not allow other boxes to be right next to it.
+Inner Display Type: Tells the children of the box how to be displayed. 
+
+Display Outside Values:
+display: block;
+display: inline;
+display: run-in;
+Display Inside Values:
+display: flow;
+display: flow-root;
+display: table;
+display: flex;
+display: grid;
+display: ruby;
+
+Display Outside and Inside:
+display: block flow;
+display: inline table;
+display: flex run-in;
+Display Box Values:
+display: contents;
+display: none;
+Display Global Values:
+display: inherit;
+display: initial;
+display: unset;
+
+Display Internal Values:
+display: table-row-group;
+display: table-header-group;
+display: table-footer-group;
+display: table-row;
+display: table-cell;
+display: table-column-group;
+display: table-column;
+display: table-caption;
+-->
+ <br>
+ <br>
+ <br>
+
 <a href="#top">Top</a>
 
 <p id="bottom"></p>
