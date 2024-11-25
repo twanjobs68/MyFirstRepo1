@@ -33,6 +33,20 @@ ul{
     
     border-radius:8px, 8px,8px,8px;
 }
+
+#loginPage{
+    border:  3px solid black;
+    height:150px;
+    width:300px;
+
+}
+
+#registerPage{
+    border:  3px solid rgb(155, 14, 14);
+    height:250px;
+    width:400px;
+
+}
 /* #blue-box{
     
     border: 8px solid black;
