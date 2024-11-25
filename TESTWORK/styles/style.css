@@ -4,75 +4,16 @@
     text-align:center;
 } */
 
-#calcTbl{
-   width: 250px;
-   height: 370px;
-   text-align: center;
-   border: 5px solid green;
+ #homeNav{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+
+  
  }
  
- 
- th, td {
-   border: 2px solid red;
-   width:25vw;
-   height: 11.65vw;
-     
- }
- 
- 
- td:hover {
-    background-color: lightcoral;
-    color: white;
-    
- }
-
- #result-box{
-   top: 10px;
-   background-color: white;
-   border:2px solid red;
-   margin:3px;
-   padding: 5px;
-   height:2vw;
-   width:39.1vw;
- }
-
- #result-box:hover{
-   background-color:lightcoral;
-   color:white;
- }
-
- #eqAndminus-parent{
-
-  display:flex;
- }
- #equal-box{
-   top: 10px;
-   background-color: turquoise;
-   border:2px solid red;
-   margin:3px;
-   padding: 5px;
-   height:2vw;
-   width:28.6vw;
- }
- #equal-box:hover{
-   background-color:lightcoral;
-   color:white;
- }
-
- #minus-box{
-   
-   top: 10px;
-   background-color: turquoise;
-   border:2px solid red;
-   margin:3px;
-   padding: 5px;
-   height:2vw;
-   width:9vw;
- }
- #minus-box:hover{
-   background-color:lightcoral;
-   color:white;
- }
 
 
 

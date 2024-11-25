@@ -1,0 +1,89 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    
+}
+
+#resumeNavBar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #dd8f8f; 
+}
+
+#resumeNavBar li {
+  float: left;
+  border-right: 3px solid #121118;
+}
+
+#resumeNavBar li:last-child {
+  border-right: none;
+}
+
+#resumeNavBar li a {
+  display: block;
+  color: rgb(221, 204, 152);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#resumeNavBar li a:hover:not(.active) {
+  background-color: #111;
+}
+
+#resumeNavBar .active {
+  background-color: #0b553a;
+}
+
+#contactInfo{
+    background-color: darkmagenta;
+}
+#professionalSummary{
+    background-color: deepskyblue;
+}
+#experienceSection{
+    background-color: #dd8f8f;
+}
+#educationSection{
+    background-color: khaki;
+}
+#additionalInfoSection{
+ background-color: cornsilk;   
+}
+#professionalDevelopmentSection{
+    background-color: darkorange;
+}
+#bottom-navbar{
+    background-color: rgb(185, 142, 224);
+    font-weight:bold;
+}
+
+section{
+        margin:20px; 
+        background-color: rgb(208, 233, 183); 
+        
+}
+
+
+/* img{
+    border:100pxc; color:orange;
+    border-radius: 8px;
+} */
+#twansResume{
+   
+    padding-left:50px;
+}
+ul{
+    padding-left:50px;
+}
+
+
+ 
+
+
+
+
+
