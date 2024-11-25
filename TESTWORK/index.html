@@ -262,19 +262,105 @@ div{
 <div>Smallville</div>
 <br>
  <br>
- <input type=“password”>	
- <input type=“radio”>	
- <input type=“range”>	
- <input type=“reset”>	
- <input type=“search”>	
- <input type=“submit”>	
- <input type=“tel”>	
- <input type=“text”>	
- <input type=“time”>	
- <input type=“url”>	
- <input type=“week”>
- 
 
+ <!--INPUT TYPES-->
+ <!-- <input type=“button”>  	<input type=“password”>	
+ <input type=“checkbox”>	<input type=“radio”>	
+ <input type=“color”>       <input type=“range”>	
+ <input type=“date”>        <input type=“reset”>	
+ <input type=“datetime-local”><input type=“search”>	
+ <input type=“email”>       <input type=“submit”>	
+ <input type=“file”>        <input type=“tel”>	
+ <input type=“hidden”>      <input type=“text”>	
+ <input type=“image”        input type=“time”>	
+ <input type=“month”>       <input type=“url”>	
+ <input type=“number”>      <input type=“week”>
+  -->
+
+  <!--forms-->
+
+  <form action="#">
+    <label for="userName">User Name
+      <input type="text" name="userName" id="UserName" required />
+    </label>
+ 
+ <br>
+    <label for="password">Password
+      <input type="password" name="password" id="password" />
+    </label>
+ </form>
+ <label>
+    <input type="text">
+ </label>
+ <label for="fullName">Full Name</label>
+ <input id="fullName" type="text" name="name">
+
+ <!--fieldset-->
+ <fieldset>
+    <legend>Checkboxes</legend>
+    <label for="checkbox">Checkbox1
+       <input type="checkbox" name="checkbox" id="checkbox" />
+    </label>
+    <label for="checkbox2">Checkbox2
+       <input type="checkbox" name="checkbox2" id="checkbox2" />
+    </label>
+    <label for="checkbox3">Checkbox3
+       <input type="checkbox" name="checkbox3" id="checkbox3" />
+    </label>
+ </fieldset>
+
+ <fieldset>
+    <legend>Radio Buttons</legend>
+    <label>Radio1
+       <input type="radio" name="radio" id="radio1" />
+    </label><br>
+    <label>Radio2
+       <input type="radio" name="radio" id="radio2" />
+    </label><br>
+    <label>Radio3
+       <input type="radio" name="radio" id="radio3" />
+    </label>
+ </fieldset>
+
+ <form action="#">
+    <label for="UserName">User Name</label>
+    <input type="text" name="userName" id="UserName" required><br>
+    <label for="password">Password</label>
+    <input type="password" name="password" id="password"><br><br>
+    <fieldset>
+        <legend>Checkboxes</legend>
+        <label for="checkbox">Checkbox1</label><input type="checkbox" name="checkbox" id="checkbox">
+        <label for="checkbox2">Checkbox2</label><input type="checkbox" name="checkbox2" id="checkbox2">
+        <label for="checkbox3">Checkbox3</label><input type="checkbox" name="checkbox3" id="checkbox3">
+    </fieldset><br>
+    <fieldset>
+        <legend>Radio Buttons</legend>
+        <label for="radio1">radio1</label>
+        <input type="radio" name="radio" id="radio1">
+        <label for="radio2">radio2</label>
+        <input type="radio" name="radio" id="radio2">
+        <label for="radio3">radio3</label>
+        <input type="radio" name="radio" id="radio3">
+    </fieldset>
+ </form>
+<!--drop down menu-->
+
+
+<h2>The select Element</h2>
+
+<p>The select element defines a drop-down list:</p>
+
+<form action="#">
+  <label>Choose a car:</label>
+  <select name="cars">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi" selected>Audi</option>
+  </select>
+
+  <input type="submit">
+</form>
 
 
 
