@@ -1,0 +1,73 @@
+#calcTbl{
+    width: 250px;
+    height: 370px;
+    text-align: center;
+    border: 5px solid green;
+  }
+  
+  
+  th, td {
+    border: 2px solid red;
+    width:25vw;
+    height: 11.65vw;
+      
+  }
+  
+  
+  td:hover {
+     background-color: lightcoral;
+     color: white;
+     
+  }
+ 
+  #result-box{
+    top: 10px;
+    background-color: white;
+    border:2px solid red;
+    margin:3px;
+    padding: 5px;
+    height:2vw;
+    width:39.1vw;
+    display:flex;
+    justify-content:end;
+   
+  }
+ 
+  #result-box:hover{
+    background-color:lightcoral;
+    color:white;
+  }
+ 
+  #eqAndminus-parent{
+ 
+   display:flex;
+  }
+  #equal-box{
+    top: 10px;
+    background-color: turquoise;
+    border:2px solid red;
+    margin:3px;
+    padding: 0px;
+    height:3.7vw;
+    width:12.56em;
+  }
+  #equal-box:hover{
+    background-color:lightcoral;
+    color:white;
+  }
+ 
+  #minus-box{
+    
+    top: 10px;
+    background-color: turquoise;
+    border:2px solid red;
+    margin:3px;
+    padding: 0px;
+    height:3.7vw;
+    width:3.59em;
+    
+  }
+  #minus-box:hover{
+    background-color:lightcoral;
+    color:white;
+  }
