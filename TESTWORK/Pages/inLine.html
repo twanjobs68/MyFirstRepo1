@@ -18,24 +18,24 @@
     Selector list =     inlineBlock, div
     Descendant combinator = .inlineBlock div
     */
-
-    .inlineBlock, div {
+/* 3. Comment out the span’s display property and value, and you will see that it no longer creates a new line because span is inline by default. */
+    /* .inlineBlock, div {
         display: inline-block;
-    }
+    } */
 
-    /*parent div*/
+    /*parent div-original size width:210px height:205px. 1. Change the width of the parent <div> from 210px to 400px.*/
     .inlineBlock {
         margin-top: 10px;
         background-color: white;
         /******     Change width to 410px for inline example  ******/
-        width: 210px;
+        width: 400px;
         height: 205px;
         border: 3px dashed red;
     }
 
-    /****** Child divs ******/
+    /****** Child divs with current width and height of 100px. 2. Comment out the width of the child divs and its size will become the width of the container.******/
     .inlineBlock div {
-        width: 100px;
+        /* width: 100px; */
         height: 100px;
         border: 1px solid #000;
         background-color: aqua;
