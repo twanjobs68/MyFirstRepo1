@@ -27,3 +27,9 @@ html{
 
 
 }
+
+li:hover {
+    background-color: rgb(230, 236, 146);
+    color: white;
+    
+ }

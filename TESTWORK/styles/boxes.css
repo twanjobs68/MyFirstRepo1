@@ -1,11 +1,14 @@
-/* *{
+*{
     margin:0;
     padding:0;
     box-sizing: border-box;
     
-} */
+}
 
 
+.contentNav{
+    position:fixed;
+}
 /* #blue-box{
     
     border: 8px solid black;
@@ -16,4 +19,90 @@
     background-color: blue;
 } */
 /* p{ background-color: blue;
-color:white; 
+color:white; */
+
+/*50% of the div container*/
+.container {
+  width: 128px;
+  height: 128px;
+    /* position:absolute; */
+  
+  /* left: 64px; */
+
+  border: 2px solid black;
+}
+.positoned-box {
+  margin:64px;
+  width: 64px;
+  height: 64px;
+
+  background-color: maroon;
+ 
+  
+  /*will not work
+left: 64px;*/
+
+  /*relative position to parent container. Parent is the body so move box 50% of the parent size. This si done before wrapping code in div=container*/
+  
+  /* left: 50%; */
+}
+.positoned-box-relative {
+    margin:64px;
+    width: 64px;
+    height: 64px;
+  
+    background-color: rgb(14, 107, 95);
+    /* position: relative; */
+    /* left:50%; */
+    /*will not work
+  left: 64px;*/
+  
+    /*relative position to parent container. Parent is the body so move box 50% of the parent size. This si done before wrapping code in div=container*/
+    
+    
+  }
+ 
+  .positoned-box-fixed{
+    margin:64px;
+    width: 64px;
+    height: 64px;
+  
+    background-color: rgb(13, 184, 42);
+    /* position: relative; */
+    /*will not work
+  left: 64px;*/
+  
+    /*relative position to parent container. Parent is the body so move box 50% of the parent size. This si done before wrapping code in div=container*/
+    
+    left: 50%;
+  }
+  .positoned-box-absolute {
+    margin:64px;
+    width: 64px;
+    height: 64px;
+  
+    background-color: rgb(2, 0, 128);
+    /* position: relative;
+    left:50%; */
+    /*will not work
+  left: 64px;*/
+  
+    /*relative position to parent container. Parent is the body so move box 50% of the parent size. This si done before wrapping code in div=container*/
+    
+
+  }
+  .positoned-box-fixed {
+    margin:64px;
+    width: 64px;
+    height: 64px;
+  
+    background-color: rgb(128, 0, 17);
+    /* position: relative;
+    left:50%; */
+    /*will not work
+  left: 64px;*/
+  
+    /*relative position to parent container. Parent is the body so move box 50% of the parent size. This si done before wrapping code in div=container*/
+    
+
+  }
