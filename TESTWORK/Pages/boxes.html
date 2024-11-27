@@ -23,30 +23,57 @@
         box-sizing: border-box;
       }
 
-      .outer-box {
+      #yellow-box {
         border: 3px solid black;
         width: 160px;
         height: 160px;
-        background-color: red;
+        background-color: rgb(251, 255, 0);
+       box-shadow: 10px 5px 5px green;
+       /* box-shadow: 10px 5px 5px red;
+       box-shadow: 60px -16px teal;
+       box-shadow: inset 5em 1em gold;
+       box-shadow: 3px 3px red, -1em 0 .4em olive; */
       }
-      .innerbox {
+      #blue-box {
         margin: 8px;
-        border: 18px solid black;
+        border: 5px dashed black;
         padding: 8px;
 
         width: 80px;
         height: 80px;
-
+        font-size: 10px;
         color: white;
         background-color: blue;
+        /* float:inline-end; */
+        /* float:left; */
+        float:right;
       }
       /* p{ background-color: blue;
     color:white; 
 
 }*/
-      div {
-        color: purple;
+      #oneDiv{
+        color: rgb(197, 53, 197);
       }
+
+      #twoDiv{
+        color: #f01010cc;
+        font-weight: bold;
+      }
+
+      .addressClass{
+        border:2px dashed green;
+        border-bottom: 2px ridge rgba(100%, 50%, 50%, .33);
+        text-align: center;
+
+        background-color: rgb(219, 113, 13);
+        width: 135px;
+        height:100px;
+        font-family: cursive;
+      }
+
+
+
     </style>
     <br />
     <br />
@@ -56,20 +83,21 @@
     <div id="yellow-box">
       outter box
       <!-- inner box -->
-      <div class="blue-box">Hello Kitty</div>
+      <div id="blue-box">Inner box says "Hello Kitty"</div>
     </div>
     <br />
-    <br />
-    <br />
-    <br />
-    <br />
+        <br />
+            <br />
+                <br />
+                    <br />
 
-    <div style="width: 100px; height: 100pcx; color: magenta">
-      Observatory Drive
-    </div>
-    <div>Calhoun Drive</div>
-    <div>Route 66</div>
+    <div id="oneDiv" style width:50px; height: 50px;>
+      Observatory Drive</div>
+    <div id="twoDiv" style width:50px; height: 50px; >Calhoun Drive</div>
+    <div class="addressClass">
+        <div>Route 66</div>
     <div>Smallville</div>
+</div>
     <br />
 
     <br />
