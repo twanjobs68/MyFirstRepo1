@@ -5,7 +5,7 @@
     
 }
 
-html{
+.contentPage{
     /* background-color:rgb(241, 224, 179); */
     background: url(https://www.shutterstock.com/image-photo/brp-can-spyder-roadster-tricycle-motorcycle-2424478253) no-repeat center center fixed;
     background-size: cover;
@@ -28,8 +28,11 @@ html{
 
 }
 
+li{
+    background-color: aqua;
+}
 li:hover {
     background-color: rgb(230, 236, 146);
-    color: white;
+    /* color: white; */
     
  }

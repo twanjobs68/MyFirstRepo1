@@ -1,63 +1,46 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-    
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-section{
-        margin:20px; 
-        background-color: rgb(208, 233, 183); 
+section {
+  margin: 20px;
+  background-color: rgb(208, 233, 183);
 }
 
-
-img{
-    border:100pxc; color:orange;
-    border-radius: 8px;
+ul {
+  padding-left: 50px;
 }
 
-ul{
-    padding-left:50px;
+#yellow-box {
+  top: 10px;
+  background-color: orange;
+  width: 5em;
+  height: 5em;
+
+  border-radius: 8px, 8px, 8px, 8px;
 }
 
- 
- /* .myHomePics{
-    background-color: salmon;
-}  */
-
- #yellow-box{
-    top: 10px;
-    background-color:orange;
-    width: 5em;
-    height:5em;
-    
-    border-radius:8px, 8px,8px,8px;
+#loginPage {
+  border: 3px solid black;
+  height: 150px;
+  width: 300px;
 }
 
-#loginPage{
-    border:  3px solid black;
-    height:150px;
-    width:300px;
-
+#registerPage {
+  border: 3px solid rgb(155, 14, 14);
+  height: 280px;
+  width: 435px;
 }
-
-#registerPage{
-    border:  3px solid rgb(155, 14, 14);
-    height:280px;
-    width:435px;
-
+#register-heading {
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-#register-heading{
-    font-weight:bold;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+#fName {
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-#fName{
-    font-weight:bold;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
-}
-
-
-
 
 /* p,div,section,article{
     color: orange;
@@ -70,4 +53,3 @@ thing only, Class can be the same on multiple things. 👌 */
     border:1px solid red;
     
 } */
-

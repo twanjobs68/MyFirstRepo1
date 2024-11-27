@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#homeNav {
+  background-image: linear-gradient(rgb(158, 104, 228), yellow, blue);
+}
+
+a:hover {
+  background-color: pink; 
+}
+
+.myHomePicsContainer {
+  background-image: linear-gradient(rgb(55, 35, 128), yellow, blue);
+  padding: 25px;
+}
+
+#myHomePics1{
+    
+}
+/* img{
+    border:100pxc; color:orange;
+    border-radius: 8px;
+} */
