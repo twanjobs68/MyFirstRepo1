@@ -13,15 +13,23 @@
 
 }
 
+.contentHeading{
+    display:flex;
+    justify-content:center;
+
+}
 #contentList{
        
+    display:flex;
+    justify-content:center;  
+
     cursor:pointer;
     margin-left: 1em;
     margin-top:1em;
     padding:1.2em;
-    width:256px;
-    height4300px;
-       
+    width:25em;
+    height:25em;
+
     border-top: 5px solid rgb(226, 10, 10);
     border-right: 5px solid rgb(22, 170, 22);
     border-bottom: 5px solid rgb(103, 25, 177);

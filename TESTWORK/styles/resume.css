@@ -5,15 +5,22 @@
     
 }
 
+.topHomeBtn{
+  position:fixed;
+}
+
 #resumeNavBar ul {
+  position:fixed;
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #e29a9a; 
+  
 }
 
 #resumeNavBar li {
+  
   float: left;
   border: 3px solid #121118;
   border-radius:8px;

@@ -1,12 +1,21 @@
-*{
-    margin:0px;
-    padding:0px;
-    
+* {
+  margin: 0px;
+  padding: 0px;
 }
 
-#myHomePics4{
-    
+body{
+    background-image: url(/assets/images/purplecalilily.jpg);
+    opacity:0.5;
 }
-#homePic1Description4{
-    color:royalblue
+
+h2 {
+  background-image: linear-gradient(to right, purple, yellow, gold, blue);
+}
+#myHomePics4 {
+  margin: 15px;
+  padding: 101px;
+}
+
+#homePic1Description4 {
+  color: royalblue;
 }
