@@ -5,16 +5,12 @@
 }
 
 #homeNav {
-  background-image: linear-gradient(
-    rgb(158, 104, 228),
-    yellow,
-    rgb(133, 133, 236)
-  );
+  background-image: linear-gradient(rgb(158, 104, 228), yellow, rgb(133, 133, 236));
   font-weight: bolder;
 }
 
 a:hover {
-  background-color: pink;
+  background-color: pink; 
 }
 
 .myHomePicsContainer {
@@ -22,87 +18,8 @@ a:hover {
   padding: 25px;
 }
 
+
 /* img{
     border:100pxc; color:orange;
     border-radius: 8px;
 } */
-#myHomePics2 {
-  position: relative;
-  left: 370px;
-  bottom: 210px;
-}
-#homePic1Description2 {
-  position: absolute;
-  left: 345px;
-  bottom: 515px;
-}
-
-#myHomePics3{
-    Position:relative;
-    bottom:905x;
-
-}
-
-#homePic1Description3{
-    Position:absolute;
-    bottom:140px;
-
-}
-#myHomePics5{
-    position:relative;
-    left:750px;
-    bottom:555px;
-}
-
-#homePic1Description5{
-    position:absolute;
-    left: 735px;
-    bottom:525px;
-}
-
-#myHomePics6{
-
-    
-}
-
-#homePic1Description6{
-
-}
-
-#myHomePics7{
-    position: absolute;
-    left:460px;
-    bottom: 155px;
-
-}
-
-#homePic1Description7{
-    position: relative;
-    left: 390px;
-    bottom: 430px;
-
-}
-
-#myHompePics8{
-    
-}
-
-#homePic1Description8{
-
-}
-
-#myHompePics9{
-
-}
-#homePic1Description9{
-
-}
-
-#myXfactorz{
-
-}
-
-#homePic1DescriptionX{
-
-
-}
