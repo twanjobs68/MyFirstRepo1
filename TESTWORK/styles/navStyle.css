@@ -2,7 +2,8 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    overflow: hidden; /*UNCOMMENT ALL COMMENTS AND COMMENT ACTIVE CODE IF YOU WANT A HORIZONTAL BAR INSTEAD OF VERTICAL NAV BAR*/
+    
     background-color: #d13434;
   }
   
@@ -29,5 +30,39 @@ ul {
   
   .active {
     background-color: #114861;
+  }
+
+  vertBar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; UNCOMMENT ALL COMMENTS AND COMMENT ACTIVE CODE IF YOU WANT A HORIZONTAL BAR INSTEAD OF VERTICAL NAV BAR*/
+    width:200px;
+    background-color: #d34208;
+  }
+  
+  /* li {
+    float: left;
+    border-right: 1px solid #bbb;
+  } */
+  
+  vertBar,li:last-child {
+    border-right: none;
+  }
+  
+  vertBar,li a {
+    display: block;
+    color: rgb(74, 11, 156);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  vertBar,li a:hover:not(.active) {
+    background-color: #080507;
+  }
+  
+  vertBar,.active2 {
+    background-color: #a09715;
   }
   

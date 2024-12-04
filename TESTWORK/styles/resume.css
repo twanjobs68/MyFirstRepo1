@@ -4,33 +4,39 @@
   box-sizing: border-box;
 }
 body {
-  background-image: linear-gradient(blue, orange, purple);
+  background-image: linear-gradient(rgb(9, 9, 36), orange, purple);
+}
+.twansResume {
+  background-color: rgb(31, 27, 27);
+  margin: 3em;
+  padding: 1em;
 }
 
-.topHomeBtn {
-  position: fixed;
-}
+/* .topHomeBtn {
+   position: fixed; 
+} */
 
 #resumeNavBar ul {
   position: fixed;
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+
+  overflow: hidden; /*comment if you want a horizontal bar*/
   background-color: #e29a9a;
 }
 
 #resumeNavBar li {
-  float: left;
+  float: left; /*uncomment if you want a horizontal bar*/
   border: 3px solid #121118;
   border-radius: 8px;
   font-size: 15px;
   padding: 4px;
 }
 
-#resumeNavBar li:last-child {
-  /* border-right: none; */
-}
+/* #resumeNavBar li:last-child {
+  border-right: none;
+} */
 
 #resumeNavBar li a {
   display: block;
@@ -56,24 +62,58 @@ body {
 #twanImg {
   display:inline-block; 
 } */
-#contactInfo {
-  border: 5px solid green;
-  padding: 5px;
+
+.contactDetails{
+  display:flex;
+  
+}
+img {
+ border: 5px solid black;
+  object-fit: cover;
+}
+/* .contactPic {
+  background-color: beige;
+} */
+/* .contactPic { */
+  /* border: 5px solid rgb(16, 24, 16);
+  padding: 5px; */
   /*/width180px;*/
-  width: 12.4%;
+  /* width: 230px; */
+  /* position: relative; */
+  /* left: 100px; */
   /* background-color: rgb(235, 112, 235); */
+/* } */
+
+
+#nameCard{
+  color:white;
+  
+
+  
 }
-#contactDetails {
+#jobTitle{
+  font-size: 1em;
+  font-style:italic;
+  color:rgb(79, 163, 231);
+  
+}
+#jobTitle{
+  
+  
+}
+/* #contactDetails {
   position: absolute;
-  top: 230px;
-  left: 235px;
+  top: 205px;
+  left: 335px;
   /* border: 2px solid white; */
-  /*width:800px;*/
+  /*width:800px;
   width: 50%;
-}
-#professionalSummary {
-  border: 5px solid BLACK;
-  padding:10px;
+} */
+.professionalSummary {
+  border: 5px solid black;
+  height: 205px;
+  width: 75em;
+  padding: 10px;
   background-color: deepskyblue;
 }
 
@@ -81,17 +121,17 @@ body {
   box-sizing: border-box;
   width: 950px;
 } */
-#skillsSection {
+.skillsSection {
   border: 5px solid yellow;
-  position:absolute;
-  top:565px; 
-  left:950px;
+  
+  top: 565px;
+  left: 950px;
   width: 565px;
-  height:3383px;
-  padding:10px;
+  height: 3383px;
+  padding: 10px;
   background-color: rgb(183, 248, 119);
   font-size: larger;
-  font-weight:400;
+  font-weight: 400;
 }
 
 /* #stayHome{
@@ -100,34 +140,34 @@ body {
  
 
 } */
-#experienceSection {
+.experienceSection {
   border: 5px solid red;
   width: 950px;
-  padding:10px;
-  color:white;
+  padding: 10px;
+  color: white;
   background-color: #000;
 }
-#educationSection {
+.educationSection {
   border: 5px solid purple;
   width: 950px;
-  padding:10px;
+  padding: 10px;
   background-color: khaki;
 }
-#additionalInfoSection {
+.additionalInfoSection {
   border: 5px solid royalblue;
   width: 950px;
-  padding:10px;
+  padding: 10px;
   background-color: cornsilk;
 }
-#professionalDevelopmentSection {
+.professionalDevelopmentSection {
   width: 950px;
   border: 5px solid brown;
-  padding:10px;
+  padding: 10px;
   background-color: rgb(248, 161, 56);
 }
 #bottom-navbar {
   border: 5px solid pink;
-  padding:10px;
+  padding: 10px;
   background-color: rgb(185, 142, 224);
   font-weight: bold;
 }
