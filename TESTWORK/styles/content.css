@@ -9,17 +9,18 @@
     /* background-color:rgb(241, 224, 179); */
     background: url(https://www.shutterstock.com/image-photo/brp-can-spyder-roadster-tricycle-motorcycle-2424478253) no-repeat center center fixed;
     background-size: cover;
-
+    
 
 }
 
 .contentHeading{
+    
     display:flex;
     justify-content:center;
-
+    
 }
 #contentList{
-       
+      
     display:flex;
     justify-content:center;  
 
@@ -28,7 +29,7 @@
     margin-top:1em;
     padding:1.2em;
     width:25em;
-    height:25em;
+    height:30em;
 
     border-top: 5px solid rgb(226, 10, 10);
     border-right: 5px solid rgb(22, 170, 22);

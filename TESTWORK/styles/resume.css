@@ -63,12 +63,20 @@ body {
   display:inline-block; 
 } */
 
-.contactDetails{
-  display:flex;
-  
+.contactContainer {
+  border: 2px solid orange;
+}
+h4 {
+  color: grey;
+}
+
+.contactDetails {
+  display: flex;
 }
 img {
- border: 5px solid black;
+  border: 2px solid black;
+  height: 250px;
+  width: 200px;
   /* object-fit: cover; */
 }
 
@@ -77,7 +85,7 @@ img {
   top: 205px;
   left: 335px;
   /* border: 2px solid white; */
-  /*width:800px;
+/*width:800px;
   width: 50%;
 } */
 
@@ -85,40 +93,39 @@ img {
   background-color: beige;
 } */
 /* .contactPic { */
-  /* border: 5px solid rgb(16, 24, 16);
+/* border: 5px solid rgb(16, 24, 16);
   padding: 5px; */
-  /*/width180px;*/
-  /* width: 230px; */
-  /* position: relative; */
-  /* left: 100px; */
-  /* background-color: rgb(235, 112, 235); */
+/*/width180px;*/
+/* width: 230px; */
+/* position: relative; */
+/* left: 100px; */
+/* background-color: rgb(235, 112, 235); */
 /* } */
 
-
-.nameCard{
+.nameCard {
   font-size: 30px;
-  border: 2px solid green;
-  color:white;
-  padding:10px;
-  width:20em;
-  margin:10px;
-  
-  
-  
+  /* border: 2px solid green; */
+  color: white;
+  margin:0em;
+  padding: .51em;
+  gap: 1em;
+  /* text-align: top; */
+  line-height:40px;
+  width:23em;
 }
-.nameCard h4{
-  color:rgb(43, 129, 129);
-  font-size: 20px;
-  font-family:'Courier New', Courier, monospace;
-  padding: 0;
-  text-align:top;
+.nameCard h4 {
+  color: rgb(43, 129, 129);
+  font-size: 25px;
+  font-family: "Courier New", Courier, monospace;
+  
+  /* text-align:top; */
 }
 
-.addressCard{
+.addressCard {
   margin: 10px;
-  border: 2px dashed red;
-  margin:10px;
-
+  padding: 1em;
+  /* border: 2px dashed red; */
+  
   
 }
 /* #jobTitle{
@@ -128,31 +135,23 @@ img {
   
 } */
 
-
 .professionalSummary {
-  border: 5px solid black;
-  height: 205px;
-  width: 75em;
-  padding: 10px;
+  border: 2px solid black;
+  padding: 1em;
   background-color: deepskyblue;
+
 }
 
 /* h2 {
   box-sizing: border-box;
   width: 950px;
 } */
-.skillsSection {
-  border: 5px solid yellow;
-  
-  top: 565px;
-  left: 950px;
-  width: 565px;
-  height: 3383px;
-  padding: 10px;
-  background-color: rgb(183, 248, 119);
-  font-size: larger;
-  font-weight: 400;
+
+.employmentSkills-container{
+display:flex;
+
 }
+
 
 /* #stayHome{
  position:absolute;
@@ -160,33 +159,56 @@ img {
  
 
 } */
-.experienceSection {
-  border: 5px solid red;
-  width: 950px;
+.employmentSection {
+  
+  border: 2px solid red;
+  /* width: 950px; */
+  width: 84%;
   padding: 10px;
   color: white;
   background-color: #000;
+  
 }
-.educationSection {
-  border: 5px solid purple;
-  width: 950px;
+
+.skillsSection {
+  border: 2px solid yellow;
+/* 
+  top: 565px;
+  left: 950px;*/
+  width: 40%;
+  
   padding: 10px;
+  background-color: rgb(183, 248, 119);
+  font-size: larger;
+  
+  /* font-weight:400px; */
+}
+
+
+
+.educationSection {
+  border: 2px solid purple;
+  /* width: 22rem; */
+  padding: 10px;
+  width: 67.6%;
   background-color: khaki;
 }
 .additionalInfoSection {
-  border: 5px solid royalblue;
-  width: 950px;
+  border: 2px solid royalblue;
+  width: 67.6%;
+  /* width: 950px; */
   padding: 10px;
   background-color: cornsilk;
 }
 .professionalDevelopmentSection {
-  width: 950px;
-  border: 5px solid brown;
+  width: 67.6%;
+  /* width: 950px; */
+  border: 2px solid brown;
   padding: 10px;
   background-color: rgb(248, 161, 56);
 }
 #bottom-navbar {
-  border: 5px solid pink;
+  border: 2px solid pink;
   padding: 10px;
   background-color: rgb(185, 142, 224);
   font-weight: bold;
