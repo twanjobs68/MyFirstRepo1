@@ -7,7 +7,7 @@ body {
   background-image: linear-gradient(rgb(9, 9, 36), orange, purple);
 }
 .twansResume {
-  background-color: rgb(31, 27, 27);
+  background-color: rgb(49, 46, 46);
   margin: 3em;
   padding: 1em;
 }
@@ -69,8 +69,18 @@ body {
 }
 img {
  border: 5px solid black;
-  object-fit: cover;
+  /* object-fit: cover; */
 }
+
+/* #contactDetails {
+  position: absolute;
+  top: 205px;
+  left: 335px;
+  /* border: 2px solid white; */
+  /*width:800px;
+  width: 50%;
+} */
+
 /* .contactPic {
   background-color: beige;
 } */
@@ -85,30 +95,40 @@ img {
 /* } */
 
 
-#nameCard{
+.nameCard{
+  font-size: 30px;
+  border: 2px solid green;
   color:white;
+  padding:10px;
+  width:20em;
+  margin:10px;
   
+  
+  
+}
+.nameCard h4{
+  color:rgb(43, 129, 129);
+  font-size: 20px;
+  font-family:'Courier New', Courier, monospace;
+  padding: 0;
+  text-align:top;
+}
+
+.addressCard{
+  margin: 10px;
+  border: 2px dashed red;
+  margin:10px;
 
   
 }
-#jobTitle{
+/* #jobTitle{
   font-size: 1em;
   font-style:italic;
   color:rgb(79, 163, 231);
   
-}
-#jobTitle{
-  
-  
-}
-/* #contactDetails {
-  position: absolute;
-  top: 205px;
-  left: 335px;
-  /* border: 2px solid white; */
-  /*width:800px;
-  width: 50%;
 } */
+
+
 .professionalSummary {
   border: 5px solid black;
   height: 205px;
