@@ -67,6 +67,7 @@ body {
 
 .contactContainer {
   border: 2px solid orange;
+  border-radius: 5px;
 }
 h4 {
   color: grey;
@@ -177,19 +178,22 @@ display:flex;
 }
 
 .skillsSection {
-  border: 2px solid yellow;
+  border: 2px solid rgb(41, 40, 37);
 /* 
   top: 565px;
   left: 950px;*/
   width: 40%;
   
   padding: 10px;
-  background-color: rgb(183, 248, 119);
+  background-color: rgb(240, 223, 149);
   font-size: larger;
   
   /* font-weight:400px; */
 }
 
+/* h2 skills{
+  color:white;
+} */
 
 
 .educationSection {
@@ -211,12 +215,12 @@ display:flex;
   /* width: 950px; */
   border: 2px solid brown;
   padding: 10px;
-  background-color: rgb(248, 161, 56);
+  background-color: rgb(240, 186, 119);
 }
 #bottom-navbar {
   border: 2px solid pink;
   padding: 10px;
-  background-color: rgb(185, 142, 224);
+  background-color: rgb(218, 202, 233);
   font-weight: bold;
 }
 
