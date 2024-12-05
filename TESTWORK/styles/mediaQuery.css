@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body{
+    background-color: blueviolet;
+}
+
+@media screen and (max-width: 728px) {
+    body{
+        background-color: green;
+    }
+}
+.box{
+    margin: 0.125em;
+    width: 128px;
+    height: 128px;
+    background-color: red;
+}
+
+
+
+@media screen and (max-width:640px){
+.box{
+    background-color: burlywood;
+}
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        flex:wrap;
+    }
+}

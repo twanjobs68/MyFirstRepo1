@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background-color: #141414;
+    --content-color: #282828;
+    --accent-color-blue: #3ba7d5;
+    --accent-color-green: #69a332;
+
+    --text-header-color: #f5fbfc;
+    --text-normal-color: #7f7f7f;
+}
+
+body {
+    background-color: var(--background-color);
+    padding: 2em;
+}
+
+.resume-container {
+    background-color: var(--content-color);
+    padding: 1em;
+}
+
+/* .summary-container {} */
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.info-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.avatar {
+    max-width: 64px;
+}
+
+.title-container h2 {
+    color: var(--text-header-color);
+    margin-bottom: 0.125em;
+}
+
+.title-container h4 {
+    color: var(--accent-color-blue);
+}
+
+.contact-card p {
+    font-size: 0.75em;
+    color: var(--text-normal-color);
+}
+
+.contact-card p strong {
+    font-size: 1.01em;
+    color: var(--text-header-color);
+}
+
+.summary-text {
+    margin-top: 1.25em;
+    color: var(--text-normal-color);
+}

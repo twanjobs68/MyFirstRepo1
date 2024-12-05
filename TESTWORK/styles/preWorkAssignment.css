@@ -1,0 +1,110 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    
+}
+    h1{
+      color: purple;
+      text-decoration: underline;
+      }
+
+     p{
+        color: dark blue;
+        font-size: 12pt;
+        text-decoration: bold;
+        }
+
+     ol{
+        font-style: italic;
+        color: purple;
+      }
+
+      #SharingList{
+
+        position: static;
+              }
+      #para2{
+        color: Gray;
+          }
+      #div1{
+         background-color: violet;
+        }
+      #div2{
+         background-color: Gold;
+         border: 3px dashed black;
+        }
+      #div3{
+         background-color: white;
+         position: static;
+        }
+      #div4{
+         background-color: gold;
+         border: 2px solid blue;
+          }
+      #div1, #div2, #div3, #div4 {
+          border: dashed purple;
+        }
+       #div7{
+          background-color: magenta;
+        }
+        span{
+            color:red;
+            font-size:50pt;
+            font-family:arial;
+        }
+        form
+         {
+         padding: 15PXZ;
+         background-color: RGB(221,160,221);
+         font-style: italic;
+         border-style: solid;
+         font-weight: 900px;
+         }
+
+         input[type=text]:focus{
+           background-color: rgb(0,200,0);
+           color: Purple;
+           width: 100%;
+           transition: 2s;
+         }
+         input[type=button]:hover{
+           color: black;
+           background-color: rgb(0,200,0);
+           padding: 5px;
+           border:solid
+         }
+        #mybuttons
+          {
+            display: inline-block;
+            text-align: center;
+            position: relative;
+            top: 50%;
+            left: 50%;
+            }
+        #para3
+            {
+            color: Purple;
+            }
+        #div5
+            {
+            background-color: gray;
+            border: dashed purple;
+            }
+        #div6
+            {
+            background-color: gray;
+            border: 2px solid blue;
+              }
+        #FindMeListA
+            {
+            color: black;
+            }
+        #FindMeListB
+            {
+            color: rgb(15, 58, 15);
+              }
+        #mysecdiv
+            {
+            background-color:Yellow;
+            }

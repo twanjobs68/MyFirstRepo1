@@ -1,0 +1,10 @@
+* {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  body{
+    background-image: url("/assets/images/sheet-music-macro-stained-41542537");
+    background-size: cover;
+    background-position: center; /*optional: This centers the image within the viewport*/
+  }

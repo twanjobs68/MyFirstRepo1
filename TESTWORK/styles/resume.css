@@ -4,10 +4,12 @@
   box-sizing: border-box;
 }
 body {
-  background-image: linear-gradient(rgb(9, 9, 36), orange, purple);
+  /* background-image: linear-gradient(rgb(9, 9, 36), orange, purple); */
+  background-color: black;
 }
 .twansResume {
   background-color: rgb(49, 46, 46);
+  border-radius: 8px;;
   margin: 3em;
   padding: 1em;
 }
@@ -29,7 +31,7 @@ body {
 #resumeNavBar li {
   float: left; /*uncomment if you want a horizontal bar*/
   border: 3px solid #121118;
-  border-radius: 8px;
+  border-radius: 2px;
   font-size: 15px;
   padding: 4px;
 }
@@ -72,6 +74,7 @@ h4 {
 
 .contactDetails {
   display: flex;
+  flex:wrap;
 }
 img {
   border: 2px solid black;
@@ -136,9 +139,11 @@ img {
 } */
 
 .professionalSummary {
-  border: 2px solid black;
+  /* border: 2px solid black; */
   padding: 1em;
-  background-color: deepskyblue;
+  color:gray;
+  /* background-color: deepskyblue; */
+  background-color: rgb(53, 47, 47);
 
 }
 
@@ -161,12 +166,13 @@ display:flex;
 } */
 .employmentSection {
   
-  border: 2px solid red;
+  /* border: 2px solid red; */
   /* width: 950px; */
   width: 84%;
   padding: 10px;
   color: white;
-  background-color: #000;
+  background-color: rgb(53, 49, 49);
+  ;
   
 }
 
