@@ -66,6 +66,7 @@ body {
 } */
 
 .contactContainer {
+  display:flex;
   border: 2px solid orange;
   border-radius: 5px;
 }
@@ -108,14 +109,14 @@ img {
 
 .nameCard {
   font-size: 30px;
-  /* border: 2px solid green; */
+  border: 2px solid green;
   color: white;
   margin:0em;
   padding: .51em;
   gap: 1em;
   /* text-align: top; */
   line-height:40px;
-  width:23em;
+  width:465px;
 }
 .nameCard h4 {
   color: rgb(43, 129, 129);
@@ -126,9 +127,10 @@ img {
 }
 
 .addressCard {
-  margin: 10px;
+  margin: 1em;
   padding: 1em;
-  /* border: 2px dashed red; */
+  border: 2px dashed red;
+  
   
   
 }
@@ -140,7 +142,7 @@ img {
 } */
 
 .professionalSummary {
-  /* border: 2px solid black; */
+  border: 2px solid pink;
   padding: 1em;
   color:gray;
   /* background-color: deepskyblue; */
@@ -170,7 +172,8 @@ display:flex;
   /* border: 2px solid red; */
   /* width: 950px; */
   width: 84%;
-  padding: 10px;
+  /* padding: 10px; */
+  padding:0;
   color: white;
   background-color: rgb(53, 49, 49);
   ;

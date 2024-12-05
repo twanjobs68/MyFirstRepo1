@@ -25,9 +25,11 @@
 }
 #contentList{
     position:relative;
-    left: 550px;
+    left: 545px;
     display:flex;
     justify-content:center;  
+    
+    flex:wrap;
     width:30vw;
     height: 100vh;
     padding: 1em;
@@ -35,8 +37,8 @@
     border-right: 5px solid rgb(22, 170, 22);
     border-bottom: 5px solid rgb(103, 25, 177);
     border-left: 5px solid rgba(25, 0, 255, 0.726);
-    
     cursor:pointer;
+    flex-grow: 1;
     
     /* margin-left: 1em;
     margin-top:1em;
@@ -48,8 +50,14 @@
 
 }
 
-li{
+contentList, ul{
+    list-style-type: "-"; 
+    padding:0;
+    margin:0;
+}
+contentList, li{
     background-color: aqua;
+    flex-grow: 1;
 }
 li:hover {
     background-color: rgb(230, 236, 146);
