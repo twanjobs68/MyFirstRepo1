@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/Pages/preWorkAssignment.html" />
+    <script src="/scripts/webDesignExamples.js"></script>
+</head>
+
+<body>
+
+    <script>
+        //LESSON 308
+        
+        console.log("Hello World Today!"); //This is a single line comment. This will show up in INSPECT in Script element
+        // example of block Comment
+        // I am commenting these 3
+        // lines of text
+
+        // 5 data Types
+        //     Decimal numbers are called floating or Double point numbers)
+        //1. /Numbers- whole numbers or Decimals() 32 bit CSSFontFeatureValuesRule(whole number or a decimal number. )
+        //  10
+        //  3.145159
+
+        //2. Strings ex- 
+        "Hello World"
+        'Hello World'
+        // which is a sequence of text surrounded by double or single quotes
+
+        //3. Booleans - 
+        // true
+        // false
+
+        //4. Undefined
+        // when you do not give a variable a value (abscense of value such as a variable with no value)
+        // undefined
+
+        //5. null- does the same as undefined but is a little more easier for javascript to work with other languages
+        // null //the developer sets a value to null
+
+        //6. Object - a structure where a number of properties is set inside of it
+        // const user={
+        user = {
+            firstName: "john",
+            lastName: "Doe",
+            age: 20
+        }
+        console.log(firstName + ' ' + lastName);
+        //3 ways to create variables
+        //1. keyword var
+        var firstName = "Peggy";
+        var lastName = "Hilliard";
+        console.log(firstName + ' ' + lastName);
+
+        //****************************************************************************
+
+        //This is an example of the confusion when using var
+        var counter = 1;
+        // Do something with this counter.
+
+        // Then, some many lines later...
+        function processData() {
+            var counter = 1;
+            // Do something with this other counter.
+        }
+
+        // Which counter are we referencing here?
+        counter++;
+        console.log(counter);
+        //NEVER USE VAR becasue the object "window" does not like 
+        //it and will cause confusion about what variable is being used
+        //*******************************************************************************
+
+
+        //See link below for reserved words in javascript.
+        // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#reserved_words
+
+        //LET
+        // It is block scoped.
+        // It is reassignable.
+        // It is not re-declarable within its scope.
+        // It is subject to hoisting.
+
+        let firstNameF = "monkey";
+        console.log(firstNameF); //will not polute global window object.  Let is block scoped. This means
+
+        let x = 10; //this variable can be  accessed by all.  This line of code is called a declaration
+        {
+            //the variable y exist in its own block but cannot be accessed ouitside. The let x= 10 is accessible to all.
+            let b = 20;
+            console.log(b + x);//30
+        }
+
+        {
+            let y = 70;
+            // console.log(y + b); //b is not accessible to this block- will give Reference error of undefined
+            console.log(y + x);//80
+        }
+
+        //How to change value of an existing variable with let or const variables.
+        let k = 50;
+        k = 4;
+
+        //CONST
+        //It is block scoped.
+        // It is not re-assignable.
+        // It is not re-declarable within its scope.
+        // It is subject to hoisting.
+        //const variable = a constant and permanet value declared.  It is not redeclarable or redefinable
+        const PI = 3.14159;
+
+        const F = 7;
+        console.log(PI + F);
+        //   PI = 10; //PI cannot be redeclared or redefined - TypeError in assignment
+
+        const user1 = {
+            DNameM: "Daryn",
+            myName: "Antwan",
+            hisName: "Kaedin",
+            herName: "Kyrie"
+
+        }
+        // user1 = 10;// will effect the user1 data but will not allow you to change the name -TypeError given
+        user.firstName = "Lionell";
+
+
+        // Javascript is a series of instructions called  STATEMENTS  which have semicolons to define 
+        // them. Javascript reads this delimeter to let the program know that a statement is finished.  On 
+        // occasion the semicolon can be ommitted but it is reccommeded that you do so for clarity of reading 
+        // code.
+        //*********************************************************************************************
+
+        //LITERALS-fixed values that you literally provide to your script.
+        //(provide a variable with value in it) - if its not something simple Use a variable(let) and not a literal
+        console.log(30);
+        console.log("Hello Peggy")
+        console.log(false)
+        console.log({ DNameM: "Kevin", myName: "Twan" })
+
+        //TYPEOF
+        //you may need to get information from a server and you arent sure what the type or a the way the 
+        // information will be displayed or stored in a list or object, 
+        // but you don't know the type, so we can use TYPEOF keyworkd.
+
+        console.log(typeof 30);
+        console.log(typeof "Hellow")
+
+        let s;
+        console.log(typeof s);//undefined
+        s = null;
+
+        console.log(typeof s);//even though 's' is assigned null(the abscence of data), it will be assigned 
+        // as an object
+        s = {};//an empty object
+        console.log(typeof s);
+
+        //ARITHMETIC OPERATORS
+
+    </script>
+
+    <div>name</div>
+    <div>address</div>
+    <div>phone</div>
+    <div>age</div>
+
+
+</body>
+
+</html>
