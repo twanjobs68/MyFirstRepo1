@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe Landing page</title>
+</head>
+<body bgcolor="green">
+    
+    <!--Things to do for  Page
+        1-Create Game board for home page- 3x3 board and add color to lines for board
+        1b. create Game board for player page. same as homepage board.  This will be game that is played
+        2- displays " Ready Set Go"  at top of Game page*
+        3. Ask for player one  name as input
+        4. Ask for player 2 name as input
+        5. Use input to populate a alert with Hello and user 1 and 2 names on Game page
+        6. prompt users to decide on who goes first and ask them to click a squaree
+        7. square should fill with an 'O'.
+        8. Display Player 2's turn after player 1 has clicked an area.  Keep on untill there is 3 in a row of x or o
+        9. once 3 x or o are detected.. stop game and display user name and message "has one game #. 
+        10a. use counter to keep up with number of games played.  3 games are played and winner is the one 
+            2 of 3 or 3 of 3.  
+        10b. If all 3 games are tied (CAT) Display "No winner! Play Again? message that if clicked goes back 
+             to home page. OR play 4th game for break
+        10c. Playing board must clear for each new game and be cleared at the start of new round
+        11. 3- Add link on page to go from game board to Welcome page and back
+        12. click on button to go to game page
+        13.  add functionality to win game if 4 corners match
+        14. Add music to home page or game page
+        15.  Add clicking sound when x or o placed on board
+        16.  Decorate Welcome page with X's and O's-->
+
+        <div>
+          <h1 class="gamego">
+              <span class=" letters-55">Ready!</span>
+              <span class=" letters-3"> Set!</span>
+              <span class=" letters-2"> Go!</span>
+              <center>****MS TWANS TIC-TAC-TOE****</center> <!--why does this work?-->
+              
+           </h1>
+        </div>
+       
+        <div>
+            <h3>
+                <span>HOME? <a href="https://twanjobs68.github.io/Tic-Tac-Toe/myfirstgame.html">CLICK <strong>HERE!</strong></a></span>
+            </h3>
+
+                <h4>
+                    <span>RESET GAME! <a href="https://twanjobs68.github.io/Tic-Tac-Toe">CLICK <strong>HERE!</strong></a></h3></span>
+                </h4>
+            </div>
+      <!--Music option-->         
+      Want Music? Click Here..<iframe width="7" height="10" src="https://www.youtube.com/embed/h_xe5UGpECU" title="YouTube video player" frameborder="0" allow="accelerometer;autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <!--Create boxes for the game board-3x3-->
+      <!-- you can also use the js keyword 'this' in the function brackets to call on the function parameter sqr-->
+      <!-- determine how to recognize winner by checking square values. Use coordnates to locate box value-->
+   	    <div id ="gcontainer">
+            
+	        <div class ="row">
+		        <div id="0_0" onclick="inthe(this)"></div>
+		        <div id="1_0" onclick="inthe(this)"></div> 
+		        <div id="2_0" onclick="inthe(this)"></div>
+                
+		    </div>
+
+		    <div class ="row">
+                
+		        <div id="0_1" onclick="inthe(this)"></div>
+		        <div id="1_1" onclick="inthe(this)"></div> 
+		        <div id="2_1" onclick="inthe(this)"></div>
+		    </div>
+
+		    <div class ="row">
+		        <div id="0_2" onclick="inthe(this)"></div>
+		        <div id="1_2" onclick="inthe(this)"></div>
+		        <div id="2_2" onclick="inthe(this)"></div>
+		    </div>
+                 
+                 
+	        </div>
+        
+        </div>
+            
+          <br>
+       <div class ="myimgs">
+        
+            <img id="cat1" src="https://twanjobs68.github.io/Tic-Tac-Toe/Images/tictactoecat (2).jpg" width="50" height = "50">
+            <img id="tt2" src="https://twanjobs68.github.io/Tic-Tac-Toe/Images/Tictactoe-1.jpg" width="50" height = "50">
+            <img id="oldbrd" src="https://twanjobs68.github.io/Tic-Tac-Toe/Images/Roman-board-2 (2).jpg"width = "50" height = "50">
+       </div> 
+
+
+            <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,183 @@
+/**********CSS style***/
+
+.gamego{
+    border: black;
+    background-color: gold;
+} 
+p{
+    display: flex;
+    justify-content: space-around;
+    align-items: right;
+    align-content: right;
+}
+h1{
+    border: black;
+    box-shadow: 5px 5px 5px 5px black;
+    height: 70px;
+     border-radius:15px 15px 15px 15px 
+}
+
+h2 a:hover{border: mintcream;
+    color:orangered;
+} 
+     
+
+h3{
+    display: inline;
+    text-align: right;
+    float: right;
+}
+
+h3 a:hover{
+   color: gold; 
+ 
+}
+
+
+#h4{
+    display: inline;
+    text-align: left;
+    float: left;
+
+}
+
+h4 a:hover{
+    color: gold; 
+   }
+
+#gcontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+.row div{
+    
+	padding: 5px;
+	border: 5px solid rgb(141, 14, 109);
+    background-color: ivory;
+	height: 100px;
+	width: 100px;
+	float: left;
+    font-size: 6.5vw;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 8%;
+    
+    
+}
+
+.myimgs
+    { display: flex;
+      background-color: white; 
+      justify-content: space-between;
+      border: 10% solid black;
+      padding: 1px;
+      box-shadow: 5px 5px 5px 5px black;
+      
+    
+    }
+ 
+.myimgs2
+    { 
+      background-color: white; 
+      justify-content: space-evenly;
+      border:10% solid black;
+      padding: 1px;
+      float: right;
+      align-items: right;
+      align-content: right;
+      box-shadow: 15px 5px 5px 5px black;
+      
+    }
+
+    
+    
+    
+	/*The clear property stops the boxes from floating on either side(left or right) of each other*/
+.row {
+	clear: both;
+}
+
+.row1 div{
+	padding: 10px;
+	border: 7px solid rgb(12, 0, 80);
+    background-color: ivory;
+    color: purple;
+	height: 100px;
+	width: 100px;
+	float: left;
+    font-size: 6.5vw;
+    text-align: center;
+    border-radius: 10%;
+    font-weight: 600;
+    
+    
+   /* background-image: url(/Images/james-armes-waterfal.jpg);*/
+    
+	}
+/*The clear property stops the boxes from floating on either side(left or right) of each other*/
+.row1 {
+	clear: both;
+    }
+
+    .row2 div{
+        padding: 10px;
+        border: 7px solid rgb(141, 14, 109);
+        background-color: ivory;
+        color: gold;
+        height: 100px;
+        width: 100px;
+        float: left;
+        font-size: 6.5vw;
+        text-align: center;
+        font-weight: 600;
+        border-radius: 10%;
+        }
+    
+ .row2{
+        clear: both;
+    }
+        .row3 div{
+            padding: 10px;
+            border: 7px solid rgb(29, 141, 14);
+            background-color: ivory;
+            color: purple;
+            height: 100px;
+            width: 100px;
+            float: left;
+            font-size: 6.5vw;
+            text-align: center;
+            font-weight: 600;
+            border-radius: 10%;
+            }
+        
+        .row3 {
+            clear: both;
+        }
+
+
+.begnn{
+	background-color: rgb(112, 26, 105);
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 15px 5px 5px 5px black;
+    
+    
+    
+
+}
+
+.tpletters {
+	position: relative;
+	font-weight: 900;
+	font-size: 4.5em;
+}  
+  .tpletters .letters {
+	position: absolute;
+	margin: auto;
+	left: 0;
+	top: 0.3em;
+	right: 0;
+	opacity: 0; 
+  }

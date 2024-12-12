@@ -13,7 +13,7 @@
 
     <script>
         //LESSON 308
-        
+
         console.log("Hello World Today!"); //This is a single line comment. This will show up in INSPECT in Script element
         // example of block Comment
         // I am commenting these 3
@@ -158,7 +158,146 @@
         console.log(typeof s);
 
         //ARITHMETIC OPERATORS
+        const a = 10 % 1;//=0
+        const b = 10 + 2;
+        const c = 10 - 2;
+        const d = 5 * 3;
+        const g = 4 / 8;
+        const e = 5 % 3;/*modular operation*/
+        let f = 5 % 1;//0
+        f = 5 % 3;
+        console.log(f);
+        f = 10 % 10;
+        console.log(f);
+        f = 1 % 2; //= 1
+        console.log(f);
+        //PEMDAS
+        const h = (3 + 2) * 4;//=20
+        console.log(h);
+        //Power
+        const i = 2 ** 3;// = 8
+        console.log(i);
+        //complex Expressions
+        const m = 2 * 3 + 4 / 6; //6.6666666666667
+        console.log(m);
+        //SQUARE ROOT-Math object
+        const j = Math.sqrt(9);// = 3
+        console.log(j);
+        //
+        let l = 10;
+        l += 1;// can add more than 1 if necessary
+        l -= 1;//can subtract more if necessary
+        l *= 1;
+        l++;//only adds one first 
+        --l;//subtracts by one first
+        let p = 4;
+        console.log("++ and --");
+        p--;//assign value then decrements l by 1
+        console.log(p);
+        p++;//assign value then increments l by l 
+        console.log(p);
+        l /= 1;
+        l % 1;
+        let o = 7;
+        ++o; //increments l by 1 first then sets value of l
+        console.log(o);
+        --o;//decrements l by 1 first then sets value of l
+        console.log(o);
 
+        let n = 10;
+        n3 = n;
+        console.log(n3);
+        n--;
+        console.log(n);
+        n++;
+        console.log(n);
+
+        //COMPARISON OPERATORS
+        const q = 10 < 5;//false
+        console.log("Is 10 less than 5? " + q);
+        const r = 6 <= 7;//true
+        console.log("Is" + r);
+        const t = 4 >= 3;//true
+        console.log(t);
+        const u = 20 != 20;//false
+        console.log(u);
+        const v = 20 <= 20;//true because its one or the other
+        console.log("Is 20 less than or equal to 20? " + v);
+        const w = 56 >= 787; //false
+        console.log("Is 56 >= than or equal to 78? " + w);
+        const y = 20 == 20;//
+        console.log("Is 20 equal to the number 20? " + v);
+        const z = 20 == "20";//checks the value only and NOT the data type - TRUE
+        console.log("Is 20 = to the string 20? ", z);//will be true so use === to check value and type
+        const aa = 20 === "20";//is 20 strictly(value and data type) equal to the string "20"
+        console.log("Is aa true?", aa);//false
+
+        //inequality checking-whether 2 values are not equal to each other
+        bb = 28 != 28;
+        console.log("Is 28 NOT equal to 28? " + bb);//false
+        //strict version of not equal
+        cc = 78 !== "78";
+        console.log("Is 78 NOT equal to the value and data type of 78 ? " + cc);//true
+        const dd = 1;
+        console.log("Is ?");
+
+        //Logical Operators
+
+        const uu = 5 > 1 && 5 < 10;//true
+        console.log(uu);
+        const yy = 5 > 1 && 5 > 10;//false
+        console.log(yy);
+        const ee = 5 > 1 && 5 < 10 && 6 < 3 && 20 === 56;
+
+        const vv = "5" == 5 || 21 < 18;
+        console.log(vv);
+
+        const someNewString = {
+            value: 5,
+        }
+
+        const someNewNumber = {
+            value: 5
+        }
+        const ff = somethingNewString = someNewNumber;
+        console.log("Is somethingString equal to something number?", ff);
+
+
+        //Combining strings and data
+        //Back tics to combine pieces of data together-allow for multi-line 
+        //strings, string interpolation with embedded expressions, 
+        //and special constructs called tagged templates.
+
+
+
+
+
+
+        console.log('Hey is')
+        //     let thisLogic = 3 > 2 && 6 == 6; // thisLogic is true
+        //     let thisLogic = 3 > 2 && 6 == 7; // thisLogic is false
+        //     let thisLogic = 3 > 2 || 6 == 6; // thisLogic is true
+        //     let thisLogic = 3 > 2 || 6 == 7; // thisLogic is true
+        //     let thisLogic = 3 > 2 || 6 == 6; // thisLogic is true
+        //     let thisLogic = 3 > 2 || 6 == 7; // thisLogic is true
+        // )
+        console.log("Hello" + " World"); // outputs: Hello World
+        console.log("This is" + " a String"); // outputs: This is a String
+        console.log("The number is " + 5); // outputs: The number is 5
+        console.log("Hello" - " World"); // Invalid, cannot use -
+
+
+        const frost =
+            `Nature’s first green is gold,
+Her hardest hue to hold.
+Her early leaf’s a flower;
+But only so an hour.
+Then leaf subsides to leaf.
+So Eden sank to grief,
+So dawn goes down to day.
+Nothing gold can stay.`;
+
+        console.log(frost);
     </script>
 
     <div>name</div>
