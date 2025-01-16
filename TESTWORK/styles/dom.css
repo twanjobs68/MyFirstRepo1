@@ -4,9 +4,12 @@ box-sizing: border-box;
 }
 
 body p {
-
+background-color: rgb(241, 150, 226)255, 0, 212);
 }
 
+article{
+    background-color: aqua;
+}
 .blog-Post{
     color: red;
     font-size: 3em;
