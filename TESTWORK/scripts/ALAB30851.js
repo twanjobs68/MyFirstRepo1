@@ -4,19 +4,19 @@
  * same task: reversing a string.
  * 
  * Which of these examples is best? Why?
- * Note that there is no "correct" answer.
- */
+ * Note that there is no "correct" answer.(Personally I like 3 or 4)
+ */1
 function reverseString(str) {
     const strArray = str.split("");
     const revArray = strArray.reverse();
     const revString = revArray.join("");
     return revString;
   }
-  
+  /*2*/
   function reverseString2(str) {
     return str.split("").reverse().join("");
   }
-  
+  /*3*/
   function reverseString3(str) {
     let revString = "";
     for (let i = str.length - 1; i >= 0; i--) {
@@ -24,12 +24,12 @@ function reverseString(str) {
     }
     return revString;
   }
-  //*I WOULD TAKE THIS FUNCTION OR THE NEXT
+  //4*I WOULD TAKE THIS FUNCTION OR THE NEXT
   function reverseString4(str) {
     if (str === "") return "";
     else return reverseString4(str.substr(1)) + str.charAt(0);
   }
-  //**OR THIS FUNCTION */
+  //5**OR THIS FUNCTION */
   function reverseString5(str) {
     return (str === "") ? "" : reverseString5(str.substr(1)) + str.charAt(0);
   }
@@ -123,9 +123,28 @@ function findLongestString() {
   console.log("The longest string is:", longestString);
 
 //4. Take an array of strings, and a number and return an array of the strings that are longer than the given number. 
-function stringsLongerThan(strings, length) {
-    return strings.filter((string) => string.length > length);
+function findStringsLongerThan() {
+    // Step 1: Create the array with strings and a number
+    const twansLongestByNum = [
+      "Parents", "a", "of", "b", "Jaliil", "c", "Marcella", "d", 
+      "Lionell Jr.", "e", "f", "Jamaul", "g", "Audrinna", "h", 
+      "are", "i", "Lionell Sr", "j", "and", "Deme", "k", "Grant", 2
+    ];
+  
+    // Step 2: Separate the number from the array
+    const number = twansLongestByNum[twansLongestByNum.length - 1]; // The last item is the number
+  
+    // Step 3: Filter the strings longer than the given number
+    const stringsLongerThanNumber = twansLongestByNum.filter(item => {
+      return typeof item === "string" && item.length > number; // Check if it's a string and longer than the number
+    });
+  
+    // Step 4: Print the strings that meet the condition
+    console.log("Strings longer than the given number:", stringsLongerThanNumber);
   }
+  
+  // Call the function to run it
+  findStringsLongerThan();
   
   // Example usage:
   // console.log(stringsLongerThan(['say', 'hello', 'in', 'the', 'morning'], 3));

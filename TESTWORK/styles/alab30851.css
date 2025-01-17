@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding:0;
+
+}
+
+body{
+    margin-top: 6px;
+    margin-left: 6px;
+    margin-right: 6px;
+    background-color: rgb(121, 186, 247);
+}
+/* box around paragraph and give background color to 2 divs and paragraph */
+.funct-container{
+    border: 5px solid black;
+    border-width:2px 4px 6px 4px;
+    
+}  
+
+#first-page{
+    
+    background-color: rgb(90, 231, 125);
+}
+
+h1{
+    background-color: crimson;
+    display:flex;
+    justify-content: center;
+    
+    
+
+}
+
+h2{
+
+background-color: darkviolet;
+display:flex;
+justify-content: center;
+}
+
+p{
+    border:5px solid rgb(16, 13, 194);
+    border-width: 3px 6px 9px 6px;
+}
+
+/* This is how code looks */
+
+/* <body>
+<div class="funct-container">
+  <div id="first-page">
+    <h1> ALAB 308.5.1 
+        <h2>Creating Reusable Functions</h2>
+    </h1>
+    <p>
+      This web page has a console. log that displays all of the outcome from
+      ALAB 308.5.1.
+    </p>
+  </div>
+</div>
+</body> */
