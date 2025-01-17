@@ -123,17 +123,36 @@ function findLongestString() {
   console.log("The longest string is:", longestString);
 
 //4. Take an array of strings, and a number and return an array of the strings that are longer than the given number. 
+//initial code
+// Create the array
+// const twansLongestByNum = [
+//     "Parents", "a", "of", "b", "Jaliil", "c", "Marcella", "d", 
+//     "Lionell Jr.", "e", "f", "Jamaul", "g", "Audrinna", "h", 
+//     "are", "i", "Lionell Sr", "j", "and", "Deme", "k", "Grant", 2
+//   ];
+  
+//   // Get the number that is last item in the array
+//   const number = twansLongestByNum[twansLongestByNum.length - 1];
+  
+//   // Find strings longer than the number using filter method and 
+//   const result = twansLongestByNum.filter(item => typeof item === "string" && item.length > number);
+  
+//   // Print the result
+//   console.log(result);
+
+  //same code below but created a function
+
 function findStringsLongerThan() {
     // Step 1: Create the array with strings and a number
     const twansLongestByNum = [
       "Parents", "a", "of", "b", "Jaliil", "c", "Marcella", "d", 
       "Lionell Jr.", "e", "f", "Jamaul", "g", "Audrinna", "h", 
-      "are", "i", "Lionell Sr", "j", "and", "Deme", "k", "Grant", 2
+      "are", "i", "Lionell Sr", "j", "and", "Deme", "k", "Grant", 1
     ];
   
     // Step 2: Separate the number from the array
-    const number = twansLongestByNum[twansLongestByNum.length - 1]; // The last item is the number
-  
+    const number = twansLongestByNum[twansLongestByNum.length - 1]; // The last item is the number. separate so you con check length
+  //of other strings
     // Step 3: Filter the strings longer than the given number
     const stringsLongerThanNumber = twansLongestByNum.filter(item => {
       return typeof item === "string" && item.length > number; // Check if it's a string and longer than the number
@@ -152,23 +171,29 @@ function findStringsLongerThan() {
 
   // For example, stringsLongerThan(['say', 'hello', 'in', 'the', 'morning'], 3); would return ["hello", "morning"].
 
-// Take a number, n, and print every number between 1 and n without using loops. Use recursion.
-function printNumbers(n, current = 1) {
-    if (current > n) return; // Base case: stop when current exceeds n
-    console.log(current);
-    printNumbers(n, current + 1); // Recursive call with incremented current
+//5.  Take a number, n, and print every number between 1 and n without using loops. Use recursion.
+// Create function called takeN
+function takeN(n) {
+    // if n is less than 1, stop (nothing to print)
+    if (n < 1) {
+      return;
+    }
+  
+    // Recursive method- print numbers from 1 to n
+    takeN(n - 1); // Call the function with a smaller number
+    console.log(n); // Print the current number
   }
   
-  // Example usage:
-  // printNumbers(5);
-  // Output: 1, 2, 3, 4, 5
-
-  //Part 2: Thinking Methodically
+  // Call the function with a number (example: 5)
+  takeN(10);
+  
+/********************************************************************************************** */
+ //Part 2: Thinking Methodically
 //   When functions are built into objects, like Arrays, they are referred to as “methods” of those objects. Many methods, including Array methods, require “callback functions” to determine their behavior.
 // For the tasks below, use the following data to test your work:
 // [{ id: "42", name: "Bruce", occupation: "Knight", age: "41" }, { id: "48", name: "Barry", occupation: "Runner", age: "25" }, { id: "57", name: "Bob", occupation: "Fry Cook", age: "19" }, { id: "63", name: "Blaine", occupation: "Quiz Master", age: "58" }, { id: "7", name: "Bilbo", occupation: "None", age: "111" }]
 // Use callback functions alongside Array methods to accomplish the following:
-// Sort the array by age.
+// a. Sort the array by age.
 // Filter the array to remove entries with an age greater than 50.
 // Map the array to change the “occupation” key to “job” and increment every age by 1.
 // Use the reduce method to calculate the sum of the ages.
@@ -182,10 +207,60 @@ const data = [
     { id: "63", name: "Blaine", occupation: "Quiz Master", age: "58" },
     { id: "7", name: "Bilbo", occupation: "None", age: "111" },
   ];
-
+/**************************************************************** */
 //1. Sort the array by age
-const sortedByAge = data.slice().sort((a, b) => parseInt(a.age) - parseInt(b.age));
-console.log("Sorted by age:", sortedByAge);
+/**************************************************************** */
+// Step 1: Create the array with data given 
+let sortByAgeArray = [
+    { id: "42", name: "Bruce", occupation: "Knight", age: "41" },
+    { id: "48", name: "Barry", occupation: "Runner", age: "25" },
+    { id: "57", name: "Bob", occupation: "Fry Cook", age: "19" },
+    { id: "63", name: "Blaine", occupation: "Quiz Master", age: "58" },
+    { id: "7", name: "Bilbo", occupation: "None", age: "111" }
+  ];
+  
+  // Step 2: Write a function to convert age strings to numbers
+  function convrtStrToANum(stringAge) {
+    //console.log("String Age is ",stringAge);
+    return parseInt(stringAge); // Convert string ex. "41" to the number 41
+  }
+  
+  // Step 3: Write a function to sort the array by age
+  function arraySrtAge(array) {
+    return array.sort(function (age1, bage2) {
+      // Compare the ages after converting them to numbers
+      return convrtStrToANum(age1.age) - convrtStrToANum(bage2.age);
+    });
+  }
+  
+  // Step 4: Call the function arraySrtAge and save the sorted array
+  let sortedArray = arraySrtAge(sortByAgeArray);
+  
+  // Step 5: Print out the sorted array
+  console.log(sortedArray);
+
+/*Explanation:
+What Does parseInt Do?
+
+parseInt("41") converts the string "41" into the number 41.
+Numbers can be compared, but strings cannot be compared in the same way.
+Why Do We Define convertToNumber?
+
+For simplicity, we created a small helper function to clearly show how the string is turned into a number.
+The sort Method:
+
+The sort method compares two items at a time using the a.age and b.age values.
+We use the convertToNumber function on both a.age and b.age to make sure they are numbers before comparing.
+Sorting Logic:
+
+If the first age is smaller, it moves earlier in the list.
+If the second age is smaller, it moves later in the list.
+
+
+
+
+
+//********************************************************************* */
 
 //2. Filter the array to remove entries with an age greater than 50
 const filteredByAge = data.filter((person) => parseInt(person.age) <= 50);
