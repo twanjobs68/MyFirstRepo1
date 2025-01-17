@@ -160,25 +160,128 @@ while(blogPostArticle3.firstChild){
 /** Replacing Elements */
 
 /*** ReplaceChild */
+const blogPostArticle4 = document.querySelector(blog-post>article);
+const replacementParagraph.textContent = "aNew Paragraph to replace";
+blogPostArticle4.replaceChild(replacementParagraph, blogPostArticle4.children[i]);
+
+/** add Attributes to elements */
 
 
-/** Attributes */
-
+const specializedparagraph = document.createElement('p');
 /*** GetAttribute */
+const dataCounterValue = specializedparagraph.getAttribute("data-counter)");
+specilizedParagraph.textContent = `${dataCounterValue}`;
 
 /*** SetAttribute */
+specializedparagraph.setAttribute("name","specialized-para");
+specializedparagraph.setAttribute("class","article-para");
+specializedparagraph.setAttribute("data-counter","0");
 
+document.body.appendChild(specializedparagraph);
 
 /** Styling */
+const specializedparagraph1 = document.createElement('p');
+stylizedParagraph1.textContent = "This is a styled paragraph";
+stylizedParagraph1.style.backgroundColor = "blue";
+stylizedParagraph1.style.fontColor = "yellow";
+stylizedParagraph1.style.fontStyle = "bold";
 
+const defaultParagraph = {
+    backgroundColor: "blue",
+    fontStyle: "bold",
+    fontSize: "2em",
+    fontColor: "yellow"
+}
+/*@@not working*/
+function applyStylingToElement(element, styling){
+    for (const property in styling){//loop through keys and store key value in property
+        const propertyValue = styling[property]
+        element.style[property] = styling[property];
 
+    }
+}
 /** className and classList */
+const articleParagraph=document.getElementsByClassName
+const classNames = articleParagraph.className.split("");
+
+classNames.push("another-class-0");
+classNames.pop("one-class-0");
+articleParagraph.classname = classNames.join('');
+articleParagraphs.classNames.add("another-class-2");
+articleParagraphs.classList.remove("another-class-3");
+articleParagraphs.classList/toggle("toggle-class");
+
+console.log(articleParagraph.className);
+
+/*most used Javascript Functions*/
+/* get use to using this one the most*/document.createElement();
+element.appendChild();
+element.removeChild();
+document.getElementById()
+document.querySelector();
+document.querySelectorAll();
+
+element.appendChild();
+elemeNt.removeChild();
+/*Functions that maybe used*/
+element.classList
+element.classList.add
+element.classlist.remove
+element.classlist.toggle
+//all others are "good to knows
+
 
 
 /** DOM Templating */
 
-/*** Document Fragment */
+/*** Document Fragment  NOT COMPLETE@@ 01/15/2025*/
+function createNewBlogPostFragment(title, subTitle, contents) {
+    const blogPostDiv = document.createElement('div');
+    const blogPostArticle = document.createElement('article');
+    const blogPostArticleFragment = document.createDocumentFragment();
+    <>
+    
+    </>
 
+    /* Title and Sub-Title Elements */
+    const titleH1 = document.createElement('h1');
+    titleH1.textContent = title;
+
+    const subTitleH2 = document.createElement('h3');
+    subTitleH2.textContent = subTitle;
+
+    blogPostArticle.appendChild(titleH1);
+    blogPostArticle.appendChild(subTitleH2);
+    for (let i = 0; i < contents.length; i++) {
+      const paragraphContent = contents[i];
+      const articleParagraph = document.createElement('p');
+      articleParagraph.textContent = paragraphContent;
+      blogPostArticle.appendChild(articleParagraph);
+
+      if (i < contents.length - 1) {
+        blogPostArticle.appendChild(document.createElement('br'));
+      }
+    }
+
+    blogPostDiv.appendChild(blogPostArticle);
+    return blogPostDiv;
+  }
+  
+    
+  
+  
 /*** Template Node & cloneNode */
+const blogPostTemplate = document.getElementById('blog-post-template');
+const blogPostDiv = blogPostTemplate.content.cloneNode(true);
+
+/*Title and sub-title elements*/
+const titleh1 = blogPostDiv.querySecltor("h1");
+titleH1.tedxtContent = title;
+
+//for state here to let i=0 and i less than contents.lentght and increment i
 
 /*** Template Literals */
+
+
+
+

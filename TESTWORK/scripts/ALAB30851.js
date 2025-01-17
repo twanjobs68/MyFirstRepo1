@@ -24,12 +24,12 @@ function reverseString(str) {
     }
     return revString;
   }
-  
+  //*I WOULD TAKE THIS FUNCTION OR THE NEXT
   function reverseString4(str) {
     if (str === "") return "";
     else return reverseString4(str.substr(1)) + str.charAt(0);
   }
-  
+  //**OR THIS FUNCTION */
   function reverseString5(str) {
     return (str === "") ? "" : reverseString5(str.substr(1)) + str.charAt(0);
   }
@@ -41,25 +41,88 @@ function reverseString(str) {
   console.log(reverseString5("!dlroW olleH"))
 
 //write functions that accomplish the following:
-// Take an array of numbers and return the sum.
-function sumArray(numbers) {
-    return numbers.reduce((sum, num) => sum + num, 0);
+// 1.Take an array of numbers and return the sum.
+function calculateSum() {
+    // Create array of numbers
+    const myArrayNums = [5, 7, 12, 47];//
+  
+    // Initialize a variable to hold the sum
+    let totalNums = 0;
+  
+    // Loop through the array to calculate sum of numbers
+    for (let i = 0; i < myArrayNums.length; i++) {
+      totalNums += myArrayNums[i];
+    }
+  
+    // Return sum
+    return totalNums;
   }
   
-// Take an array of numbers and return the average.
-function averageArray(numbers) {
-    if (numbers.length === 0) return 0; // Avoid division by zero
-    return sumArray(numbers) / numbers.length;
+  // Call function and save result
+  const total = calculateSum();
+  
+  // Output
+  console.log("The total sum is:", total);
+  
+//2 Take an array of numbers and return the average.
+function calculateAverage() {
+    // Create an array with the numbers
+    const twansArray = [7, 8, 10, 15, 29, 33];
+  
+    // Initialize a variable to hold the sum of the numbers
+    let sum = 0;
+  
+    // Loop through the array to calculate the sum
+    for (let i = 0; i < twansArray.length; i++) {
+      sum += twansArray[i];
+    }
+  
+    // Calculate the average by dividing the sum by the number of items in the array
+    let average = sum / twansArray.length;
+  
+    // Return the average
+    return average;
   }
+  
+  // Call the function and store the result
+  const avg = calculateAverage();
+  
+  // Output the average
+  console.log("The average is:", avg);
 
-// Take an array of strings and return the longest string.
-function longestString(strings) {
-    return strings.reduce((longest, current) => {
-      return current.length > longest.length ? current : longest;
-    }, "");
+// 3. Take an array of strings and return the longest string.
+function findLongestString() {
+    // Create an array with the strings
+    const myString = [
+      "The Cat", 
+      "My blanket is blue", 
+      "The apple fell from the sky", 
+      "My hair is red", 
+      "The chicken is brown", 
+      "Raisins"
+    ];
+  
+    // Initialize a variable to keep track of the longest string
+    let longest = "";
+  
+    // Loop through the array to find the longest string
+    for (let i = 0; i < myString.length; i++) {
+      if (myString[i].length > longest.length) {
+        longest = myString[i];
+      }
+    }
+  
+    // Return the longest string
+    return longest;
   }
+  
+  // Call the function and store the result
+  const longestString = findLongestString();
+  
+  // Output the longest string
+  console.log("The longest string is:", longestString);
 
-// Take an array of strings, and a number and return an array of the strings that are longer than the given number. 
+//4. Take an array of strings, and a number and return an array of the strings that are longer than the given number. 
 function stringsLongerThan(strings, length) {
     return strings.filter((string) => string.length > length);
   }
