@@ -1,11 +1,11 @@
-//Part 1: Thinking Functionally
+//Part 1-examples of functions: Thinking Functionally
 /**
  * Any of the examples below will accomplish the
  * same task: reversing a string.
  * 
  * Which of these examples is best? Why?
  * Note that there is no "correct" answer.(Personally I like 3 or 4)
- */1
+ */
 function reverseString(str) {
     const strArray = str.split("");
     const revArray = strArray.reverse();
@@ -41,7 +41,7 @@ function reverseString(str) {
   console.log(reverseString5("!dlroW olleH"))
 
 //write functions that accomplish the following:
-// 1.Take an array of numbers and return the sum.
+// 1A.Take an array of numbers and return the sum.
 function calculateSum() {
     // Create array of numbers
     const myArrayNums = [5, 7, 12, 47];//
@@ -64,7 +64,7 @@ function calculateSum() {
   // Output
   console.log("The total sum is:", total);
   
-//2 Take an array of numbers and return the average.
+//2A Take an array of numbers and return the average.
 function calculateAverage() {
     // Create an array with the numbers
     const twansArray = [7, 8, 10, 15, 29, 33];
@@ -90,7 +90,7 @@ function calculateAverage() {
   // Output the average
   console.log("The average is:", avg);
 
-// 3. Take an array of strings and return the longest string.
+// 3A. Take an array of strings and return the longest string.
 function findLongestString() {
     // Create an array with the strings
     const myString = [
@@ -122,7 +122,7 @@ function findLongestString() {
   // Output the longest string
   console.log("The longest string is:", longestString);
 
-//4. Take an array of strings, and a number and return an array of the strings that are longer than the given number. 
+//4A. Take an array of strings, and a number and return an array of the strings that are longer than the given number. 
 //initial code
 // Create the array
 // const twansLongestByNum = [
@@ -131,16 +131,7 @@ function findLongestString() {
 //     "are", "i", "Lionell Sr", "j", "and", "Deme", "k", "Grant", 2
 //   ];
   
-//   // Get the number that is last item in the array
-//   const number = twansLongestByNum[twansLongestByNum.length - 1];
-  
-//   // Find strings longer than the number using filter method and 
-//   const result = twansLongestByNum.filter(item => typeof item === "string" && item.length > number);
-  
-//   // Print the result
-//   console.log(result);
 
-  //same code below but created a function
 
 function findStringsLongerThan() {
     // Step 1: Create the array with strings and a number
@@ -171,7 +162,7 @@ function findStringsLongerThan() {
 
   // For example, stringsLongerThan(['say', 'hello', 'in', 'the', 'morning'], 3); would return ["hello", "morning"].
 
-//5.  Take a number, n, and print every number between 1 and n without using loops. Use recursion.
+//5A.  Take a number, n, and print every number between 1 and n without using loops. Use recursion.
 // Create function called takeN
 function takeN(n) {
     // if n is less than 1, stop (nothing to print)
@@ -185,7 +176,7 @@ function takeN(n) {
   }
   
   // Call the function with a number (example: 5)
-  takeN(10);
+  takeN(7);
   
 /********************************************************************************************** */
  //Part 2: Thinking Methodically
@@ -208,7 +199,7 @@ const data = [
     { id: "7", name: "Bilbo", occupation: "None", age: "111" },
   ];
 /**************************************************************** */
-//1. Sort the array by age
+//2B. Sort the array by age
 /**************************************************************** */
 // Step 1: Create the array with data given 
 let sortByAgeArray = [
@@ -240,116 +231,19 @@ let sortByAgeArray = [
   console.log(sortedArray);
 
 /*Explanation:
-What Does parseInt Do?
-
+I decided to go with parseInt to convert the string to function.  Thanks to online search I found that I could use this
 parseInt("41") converts the string "41" into the number 41.
 Numbers can be compared, but strings cannot be compared in the same way.
-Why Do We Define convertToNumber?
+I separated the parseInt step into it'ds own function so that I could understand what it was doing better.
 
-For simplicity, we created a small helper function to clearly show how the string is turned into a number.
-The sort Method:
-
-The sort method compares two items at a time using the a.age and b.age values.
-We use the convertToNumber function on both a.age and b.age to make sure they are numbers before comparing.
+For me to understand what my code is doing I created a "helper function" called convertToNumber
+to show how the string is turned into a number.
+I used the sort method to compare two items at a time using the a.age and b.age values.
+I use the convertToNumber function on both age1.age and bage1.age to make sure they are numbers before comparing.
 Sorting Logic:
 
 If the first age is smaller, it moves earlier in the list.
 If the second age is smaller, it moves later in the list.
 
+******************************************************************** */
 
-
-
-
-//********************************************************************* */
-
-//2. Filter the array to remove entries with an age greater than 50
-const filteredByAge = data.filter((person) => parseInt(person.age) <= 50);
-console.log("Filtered (age <= 50):", filteredByAge);
-
-//3. Map the array to change the “occupation” key to “job” and increment every age by 1
-const mappedData = data.map((person) => ({
-    id: person.id,
-    name: person.name,
-    job: person.occupation, // Change "occupation" to "job"
-    age: (parseInt(person.age) + 1).toString(), // Increment age by 1
-  }));
-  console.log("Mapped data (occupation to job, age incremented):", mappedData);
-
-//4. Use the reduce method to calculate the sum of the ages
-const totalAge = data.reduce((sum, person) => sum + parseInt(person.age), 0);
-console.log("Sum of ages:", totalAge);
-
-//5. Use the result to calculate the average age
-const averageAge = totalAge / data.length;
-console.log("Average age:", averageAge);
-
-//Part 3: Thinking Critically
-// For this section, develop functions that accomplish the following:
-//1.  Take an object and increment its age field.
-function incrementAge(obj) {
-    // Check if the object has an "age" field
-    if (!obj.hasOwnProperty("age")) {
-      // If not, set age to 0
-      obj.age = 0;
-    } else {
-      // If it does, increase age by 1
-      obj.age += 1;
-    }
-  
-    // Add or update the "updated_at" field with the current time
-    obj.updated_at = new Date();
-  
-    // Return the modified object
-    return obj;
-  }
-  // Example usage
-const person1 = { name: "Alice" }; // Create an object without "age"
-console.log("Before:", person1);  // Look at the object before calling the function
-console.log("After:", incrementAge(person1))
-
-
-// Take an object, make a copy, and increment the age field of the copy. Return the copy.
-function incrementAgeCopy(obj) {
-    // Create a copy of the object using {...obj}
-    const copy = { ...obj };
-  
-    // Check if the copy has an "age" field
-    if (!copy.hasOwnProperty("age")) {
-      // If not, set age to 0
-      copy.age = 0;
-    } else {
-      // If it does, increase age by 1
-      copy.age += 1;
-    }
-  
-    // Add or update the "updated_at" field with the current time
-    copy.updated_at = new Date();
-  
-    // Return the modified copy
-    return copy;
-  }
-  // Example usage
-const person2 = { name: "Bob", age: 30 }; // Create an object with "age"
-console.log("Original:", person2); // Show the original object
-console.log("Modified Copy:", incrementAgeCopy(person2)); // Call the function and see the new object
-console.log("Original After Function:", person2); 
-// For each of the functions above, if the object does not yet contain an age field, create one and set it to 0. 
-// Also, add (or modify, as appropriate) an updated_at field that stores a Date object with the current time.
-//Thought experiment: since the Date object is an object, what would happen if we modified it in the copy of 
-// the object created in the second function using setTime() or another method? How could we circumvent potentially undesired behavior?
-//
-//
-
-
-
-
-//Part 4: Thinking Practically
-// Practical application of these concepts varies greatly in industry, but the core foundations are the same: functions handle repeated, specialized tasks, and methods are functions attached to specific types of objects.
-// The Skills-Based Assessment (SBA) for this module will have you work on a real-world example that employs all of the tools you have learned thus far. To prepare for it, revisit your previous work as described below.
-// Part 5: Thinking Back
-// Once you have completed the tasks outlined above, take any extra time you may have to revisit your previous JavaScript assignments. 
-// How many of the scripts could be turned into functions?
-// What would the parameters look like? What kind of returns should they have?
-// Could you package your code into even smaller blocks, creating helper functions?
-// What else could be changed to optimize the code, knowing what you now know?
-// Explore, experiment, and experience the magic of reusable code!
