@@ -55,15 +55,7 @@ body {
 #resumeNavBar .active {
   background-color: #0b553a;
 }
-/* #twanName{
-  float:left;
-} */
-/*twanName, address1*/
-/* #address1 {
-}
-#twanImg {
-  display:inline-block; 
-} */
+
 
 .contactContainer {
   display:flex;
@@ -78,34 +70,14 @@ h4 {
   display: flex;
   flex:wrap;
 }
-img {
+/* img {
   border: 2px solid black;
-  height: 250px;
-  width: 200px;
-  /* object-fit: cover; */
-}
-
-/* #contactDetails {
-  position: absolute;
-  top: 205px;
-  left: 335px;
-  /* border: 2px solid white; */
-/*width:800px;
-  width: 50%;
+  height: 30px;
+  width: 30px;
+  
 } */
 
-/* .contactPic {
-  background-color: beige;
-} */
-/* .contactPic { */
-/* border: 5px solid rgb(16, 24, 16);
-  padding: 5px; */
-/*/width180px;*/
-/* width: 230px; */
-/* position: relative; */
-/* left: 100px; */
-/* background-color: rgb(235, 112, 235); */
-/* } */
+
 
 .nameCard {
   font-size: 30px;
@@ -134,12 +106,7 @@ img {
   
   
 }
-/* #jobTitle{
-  font-size: 1em;
-  font-style:italic;
-  color:rgb(79, 163, 231);
-  
-} */
+
 
 .professionalSummary {
   border: 2px solid pink;
@@ -161,12 +128,7 @@ display:flex;
 }
 
 
-/* #stayHome{
- position:absolute;
- top:50%;
- 
 
-} */
 .employmentSection {
   
   /* border: 2px solid red; */
@@ -194,9 +156,6 @@ display:flex;
   /* font-weight:400px; */
 }
 
-/* h2 skills{
-  color:white;
-} */
 
 
 .educationSection {
@@ -232,10 +191,7 @@ section {
   background-color: rgb(208, 233, 183);
 }
 
-/* img{
-    border:100pxc; color:orange;
-    border-radius: 8px;
-} */
+
 #twansResume {
   padding-left: 50px;
 }

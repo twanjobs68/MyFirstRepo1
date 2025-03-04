@@ -38,9 +38,9 @@ body {
     gap: 1em;
 }
 
-.avatar {
+/* .avatar {
     max-width: 64px;
-}
+} */
 
 .title-container h2 {
     color: var(--text-header-color);

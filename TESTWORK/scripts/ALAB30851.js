@@ -247,3 +247,94 @@ If the second age is smaller, it moves later in the list.
 
 ******************************************************************** */
 
+//2. Filter the array to remove entries with an age greater than 50
+const filteredByAge = data.filter((person) => parseInt(person.age) <= 50);
+console.log("Filtered (age <= 50):", filteredByAge);
+
+//3. Map the array to change the “occupation” key to “job” and increment every age by 1
+const mappedData = data.map((person) => ({
+    id: person.id,
+    name: person.name,
+    job: person.occupation, // Change "occupation" to "job"
+    age: (parseInt(person.age) + 1).toString(), // Increment age by 1
+  }));
+  console.log("Mapped data (occupation to job, age incremented):", mappedData);
+
+//4. Use the reduce method to calculate the sum of the ages
+const totalAge = data.reduce((sum, person) => sum + parseInt(person.age), 0);
+console.log("Sum of ages:", totalAge);
+
+//5. Use the result to calculate the average age
+const averageAge = totalAge / data.length;
+console.log("Average age:", averageAge);
+
+//Part 3: Thinking Critically
+// For this section, develop functions that accomplish the following:
+//1.  Take an object and increment its age field.
+function incrementAge(obj) {
+    // Check if the object has an "age" field
+    if (!obj.hasOwnProperty("age")) {
+      // If not, set age to 0
+      obj.age = 0;
+    } else {
+      // If it does, increase age by 1
+      obj.age += 1;
+    }
+  
+    // Add or update the "updated_at" field with the current time
+    obj.updated_at = new Date();
+  
+    // Return the modified object
+    return obj;
+  }
+  // Example usage
+const person1 = { name: "Alice" }; // Create an object without "age"
+console.log("Before:", person1);  // Look at the object before calling the function
+console.log("After:", incrementAge(person1))
+
+
+// Take an object, make a copy, and increment the age field of the copy. Return the copy.
+function incrementAgeCopy(obj) {
+    // Create a copy of the object using {...obj}
+    const copy = { ...obj };
+  
+    // Check if the copy has an "age" field
+    if (!copy.hasOwnProperty("age")) {
+      // If not, set age to 0
+      copy.age = 0;
+    } else {
+      // If it does, increase age by 1
+      copy.age += 1;
+    }
+  
+    // Add or update the "updated_at" field with the current time
+    copy.updated_at = new Date();
+  
+    // Return the modified copy
+    return copy;
+  }
+  // Example usage
+const person2 = { name: "Bob", age: 30 }; // Create an object with "age"
+console.log("Original:", person2); // Show the original object
+console.log("Modified Copy:", incrementAgeCopy(person2)); // Call the function and see the new object
+console.log("Original After Function:", person2); 
+// For each of the functions above, if the object does not yet contain an age field, create one and set it to 0. 
+// Also, add (or modify, as appropriate) an updated_at field that stores a Date object with the current time.
+//Thought experiment: since the Date object is an object, what would happen if we modified it in the copy of 
+// the object created in the second function using setTime() or another method? How could we circumvent potentially undesired behavior?
+//
+//
+
+
+//Not Completed
+
+//Part 4: Thinking Practically
+// Practical application of these concepts varies greatly in industry, but the core foundations are the same: functions handle repeated, specialized tasks, and methods are functions attached to specific types of objects.
+// The Skills-Based Assessment (SBA) for this module will have you work on a real-world example that employs all of the tools you have learned thus far. To prepare for it, revisit your previous work as described below.
+// Part 5: Thinking Back
+// Once you have completed the tasks outlined above, take any extra time you may have to revisit your previous JavaScript assignments. 
+// How many of the scripts could be turned into functions?
+// What would the parameters look like? What kind of returns should they have?
+// Could you package your code into even smaller blocks, creating helper functions?
+// What else could be changed to optimize the code, knowing what you now know?
+// Explore, experiment, and experience the magic of reusable code!

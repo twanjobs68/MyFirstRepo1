@@ -3,36 +3,47 @@
   padding: 0px;
 }
 
-body.background{
-width:100vw;
-height:100vh;
-   background-size:cover;
-   background-repeat:no-repeat;
+body.background {
+  width: 100vw;
+  height: 100vh;
 
-   
+  background-size: cover;
+  background-repeat: no-repeat;
+
+
 
 }
-#transparentContainer{
-    margin:30px;
-    background-color: #ffffff;
-    border:2px solid black;
+
+.aboutMe{
+  border: 3px solid red;
+  width: 30em;
+  height: 30em;
+
+
+}
+
+#transparentContainer {
+  margin: 30px;
+  background-color: #ffffff;
+  border: 2px solid black;
 
 }
 
 h2 {
   background-image: linear-gradient(to right, purple, yellow, gold, blue);
 }
+
 #myHomePics4 {
   margin: 15px;
   padding: 5px;
-  position:relative;
-  left:370px;
-  
-  
+  position: relative;
+  left: 370px;
+
+
 }
 
 #homePic1Description4 {
   color: royalblue;
-  position:relative;
-  left:370px
+  position: relative;
+  left: 370px
 }
